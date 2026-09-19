@@ -7,6 +7,7 @@
 import { evaluate, formatValue } from './evaluator.js';
 import { renderTree, pathToNode } from './render-tree.js';
 import { initLiveMode } from './live.js';
+import { initTour } from './tour.js';
 
 const REPO_URL = 'https://github.com/Sridharmalladi/prior-auth-criteria-engine';
 
@@ -15,6 +16,7 @@ const dom = {
   panes: document.getElementById('panes'),
   caseSelect: document.getElementById('case-select'),
   resetButton: document.getElementById('reset-case'),
+  guideButton: document.getElementById('open-guide'),
   policyBadge: document.getElementById('policy-badge'),
   editedBadge: document.getElementById('edited-badge'),
   tree: document.getElementById('tree'),
@@ -568,6 +570,9 @@ async function main() {
   await selectCase(state.manifest.cases[0].case_id);
   dom.status.hidden = true;
   dom.panes.hidden = false;
+
+  const guide = initTour();
+  dom.guideButton.addEventListener('click', () => guide.open());
 
   initLiveMode({
     container: document.getElementById('live-body'),

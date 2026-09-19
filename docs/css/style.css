@@ -70,10 +70,18 @@ header.site h1 {
 }
 
 header.site p.tagline {
-  margin: 0;
+  margin: 0 0 6px;
   color: var(--text-dim);
   font-size: 13.5px;
   max-width: 70ch;
+}
+header.site p.tagline:last-of-type { margin-bottom: 0; }
+header.site p.tagline.demo-note {
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
 }
 
 nav.site {
@@ -145,6 +153,21 @@ button.primary { background: var(--accent); color: #fff; border-color: var(--acc
   letter-spacing: 0.06em;
   color: var(--text-dim);
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-btn {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 10.5px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  cursor: help;
 }
 
 .pane > .body { padding: 12px 14px; }
@@ -338,3 +361,36 @@ footer.site p { margin: 3px 0; max-width: 90ch; }
 .status { padding: 20px; color: var(--text-dim); }
 .error { color: var(--false); }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* ---------------------------------------------------------------- tour --- */
+
+.tour-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.tour-dialog {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.tour-dialog h3 { margin: 0 0 8px; font-size: 16px; }
+.tour-dialog p { margin: 0; font-size: 13.5px; color: var(--text-dim); line-height: 1.55; }
+
+.tour-dots { display: flex; gap: 5px; margin: 14px 0; }
+.tour-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--border-strong); }
+.tour-dot.active { background: var(--accent); }
+
+.tour-footer { display: flex; align-items: center; gap: 8px; }
+.tour-footer button:first-child { margin-right: auto; }
