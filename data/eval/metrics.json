@@ -1,0 +1,135 @@
+{
+ "n_cases": 20,
+ "n_policies": 8,
+ "systems": {
+  "structured": {
+   "decision": {
+    "correct": 20,
+    "total": 20,
+    "accuracy": 1.0,
+    "confusion": {
+     "APPROVE": {
+      "APPROVE": 8,
+      "DENY": 0,
+      "INDETERMINATE": 0
+     },
+     "DENY": {
+      "APPROVE": 0,
+      "DENY": 8,
+      "INDETERMINATE": 0
+     },
+     "INDETERMINATE": {
+      "APPROVE": 0,
+      "DENY": 0,
+      "INDETERMINATE": 4
+     }
+    }
+   },
+   "attribution": {
+    "correct": 6,
+    "total": 8,
+    "accuracy": 0.75,
+    "misses": [
+     {
+      "case_id": "home_oxygen_02",
+      "expected": "sat_rest",
+      "got": "breathlessness"
+     },
+     {
+      "case_id": "lumbar_fusion_03",
+      "expected": "active_infection",
+      "got": "conservative_months"
+     }
+    ]
+   },
+   "calibration": [
+    {
+     "bin_low": 0.0,
+     "bin_high": 0.1,
+     "count": 1,
+     "mean_confidence": 0.0925,
+     "observed_accuracy": 1.0
+    },
+    {
+     "bin_low": 0.1,
+     "bin_high": 0.2,
+     "count": 0,
+     "mean_confidence": null,
+     "observed_accuracy": null
+    },
+    {
+     "bin_low": 0.2,
+     "bin_high": 0.3,
+     "count": 0,
+     "mean_confidence": null,
+     "observed_accuracy": null
+    },
+    {
+     "bin_low": 0.3,
+     "bin_high": 0.4,
+     "count": 2,
+     "mean_confidence": 0.3347,
+     "observed_accuracy": 1.0
+    },
+    {
+     "bin_low": 0.4,
+     "bin_high": 0.5,
+     "count": 0,
+     "mean_confidence": null,
+     "observed_accuracy": null
+    },
+    {
+     "bin_low": 0.5,
+     "bin_high": 0.6,
+     "count": 0,
+     "mean_confidence": null,
+     "observed_accuracy": null
+    },
+    {
+     "bin_low": 0.6,
+     "bin_high": 0.7,
+     "count": 7,
+     "mean_confidence": 0.6289,
+     "observed_accuracy": 1.0
+    },
+    {
+     "bin_low": 0.7,
+     "bin_high": 0.8,
+     "count": 3,
+     "mean_confidence": 0.7424,
+     "observed_accuracy": 1.0
+    },
+    {
+     "bin_low": 0.8,
+     "bin_high": 0.9,
+     "count": 2,
+     "mean_confidence": 0.8477,
+     "observed_accuracy": 1.0
+    },
+    {
+     "bin_low": 0.9,
+     "bin_high": 1.0,
+     "count": 5,
+     "mean_confidence": 0.9907,
+     "observed_accuracy": 1.0
+    }
+   ],
+   "abstention": {
+    "predicted_count": 4,
+    "actual_count": 4,
+    "true_positives": 4,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  }
+ },
+ "baseline_status": "not run \u2014 data/eval/baseline_predictions.json is absent",
+ "notes": [
+  "n = 20. This is a small sample; the intervals around every number below are wide.",
+  "Decision accuracy for the criteria graph is computed on hand-labelled gold facts, so it measures the coverage logic rather than end-to-end extraction.",
+  "Cases are synthetic and were written by the author of the system being measured.",
+  "Confidence is rule-derived, not calibrated against payer outcomes.",
+  "Baseline citations are mapped to nodes by token overlap, which is generous to the baseline."
+ ]
+}

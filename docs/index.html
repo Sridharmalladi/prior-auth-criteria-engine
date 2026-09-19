@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prior-Auth Criteria Engine</title>
+<meta name="description" content="Evaluates a documented clinical case against published Medicare coverage criteria and shows which clause blocks it.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🌳</text></svg>">
+</head>
+<body>
+
+<header class="site">
+  <h1>Prior-Auth Criteria Engine</h1>
+  <p class="tagline">
+    Evaluates whether a documented clinical case satisfies <strong>published Medicare coverage criteria</strong>,
+    and shows exactly which clause blocks it. This is criteria satisfaction against published policy —
+    <strong>not</strong> a prediction of what a payer will do.
+  </p>
+  <nav class="site">
+    <a href="index.html" aria-current="page">Demo</a>
+    <a href="eval.html">Evaluation</a>
+    <a id="repo-link" href="https://github.com/">Repository</a>
+  </nav>
+</header>
+
+<div class="controls">
+  <label for="case-select">Case</label>
+  <select id="case-select"></select>
+  <button id="reset-case" type="button">Reset case</button>
+  <span id="policy-badge"></span>
+  <span id="edited-badge"></span>
+</div>
+
+<main class="panes" id="panes" hidden>
+  <section class="pane" aria-labelledby="tree-heading">
+    <h2 id="tree-heading">Criteria tree</h2>
+    <div class="tree-scroll"><svg id="tree" role="img" aria-label="Criteria tree with each node coloured by its evaluated state"></svg></div>
+    <div class="node-detail" id="node-detail">
+      <span class="muted">Select a node to see the clause it came from.</span>
+    </div>
+  </section>
+
+  <section class="pane" aria-labelledby="note-heading">
+    <h2 id="note-heading">Note &amp; facts</h2>
+    <div class="body">
+      <div class="note" id="note"></div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </section>
+
+  <section class="pane" aria-labelledby="verdict-heading">
+    <h2 id="verdict-heading">Verdict</h2>
+    <div class="body">
+      <div class="verdict" id="verdict"></div>
+      <div class="blocking" id="blocking"></div>
+      <ul class="criteria" id="criteria"></ul>
+    </div>
+  </section>
+</main>
+
+<p class="status" id="status">Loading policies and cases…</p>
+
+<details class="live" id="live-panel">
+  <summary>Live mode — run extraction on your own note (optional)</summary>
+  <div class="body" id="live-body"></div>
+</details>
+
+<footer class="site">
+  <p><strong>All 20 cases are synthetic.</strong> They were written for this project to mirror the style of discharge and consult notes. They are not real patient records and not drawn from any credentialed corpus.</p>
+  <p>The engine determines whether the documented facts satisfy published coverage criteria. It does not model payer behaviour, adjudication practice, or the probability of denial.</p>
+  <p>Confidence is rule-derived from the tree, not calibrated against payer outcomes. Two of the eight policies are paraphrases of licence-gated LCDs and are labelled as unverified.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

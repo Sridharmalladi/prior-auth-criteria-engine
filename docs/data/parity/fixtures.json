@@ -1,0 +1,7402 @@
+[
+ {
+  "name": "leaf_>=_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": ">=",
+      "value": 6,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 6,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_>=_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": ">=",
+      "value": 6,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 4,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_>=_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": ">=",
+      "value": 6,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_<=_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 35,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_<=_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 41,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_<=_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_==_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_==_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_==_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_!=_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k != stage_iv",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "!=",
+      "value": "stage_iv",
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": "stage_ii",
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_!=_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k != stage_iv",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "!=",
+      "value": "stage_iv",
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": "stage_iv",
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_!=_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k != stage_iv",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "!=",
+      "value": "stage_iv",
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_includes_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k includes ['pt', 'nsaid']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "includes",
+      "value": [
+       "pt",
+       "nsaid"
+      ],
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": [
+     "pt",
+     "nsaid",
+     "injection"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_includes_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k includes ['pt', 'nsaid']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "includes",
+      "value": [
+       "pt",
+       "nsaid"
+      ],
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": [
+     "pt"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_includes_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k includes ['pt', 'nsaid']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "includes",
+      "value": [
+       "pt",
+       "nsaid"
+      ],
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_excludes_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k excludes ['active_infection']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "excludes",
+      "value": [
+       "active_infection"
+      ],
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": [
+     "copd"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_excludes_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k excludes ['active_infection']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "excludes",
+      "value": [
+       "active_infection"
+      ],
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": [
+     "active_infection",
+     "copd"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_excludes_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k excludes ['active_infection']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "excludes",
+      "value": [
+       "active_infection"
+      ],
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_gte_boundary",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": ">=",
+      "value": 6,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 6,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_lte_boundary",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 35,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_gte_on_string",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": ">=",
+      "value": 6,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": "six",
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_gte_on_bool",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k >= 1",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": ">=",
+      "value": 1,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_eq_bool_vs_number",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 1,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "leaf_neq_bool_vs_number",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k != True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "!=",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": 1,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_includes_scalar_fact",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k includes pt",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "includes",
+      "value": "pt",
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": "pt",
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "leaf_excludes_scalar_fact",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k excludes sepsis",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "excludes",
+      "value": "sepsis",
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": "sepsis",
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "and_all_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 8,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 30,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "and_one_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 30,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "and_one_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 8,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 30,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "b"
+ },
+ {
+  "name": "and_false_beats_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "c",
+    "value": 41,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "c"
+ },
+ {
+  "name": "and_all_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "and_two_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 30,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "or_one_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "or",
+   "nodes": {
+    "or": {
+     "id": "or",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 8,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 41,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "or_all_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "or",
+   "nodes": {
+    "or": {
+     "id": "or",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 41,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "or_unknown_with_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "or",
+   "nodes": {
+    "or": {
+     "id": "or",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": 41,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "or_true_beats_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "or",
+   "nodes": {
+    "or": {
+     "id": "or",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "or_all_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "or",
+   "nodes": {
+    "or": {
+     "id": "or",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c <= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "<=",
+      "value": 35,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "not_over_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "not",
+   "nodes": {
+    "not": {
+     "id": "not",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "contraindication == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "contraindication",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "contraindication",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "x"
+ },
+ {
+  "name": "not_over_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "not",
+   "nodes": {
+    "not": {
+     "id": "not",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "contraindication == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "contraindication",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "contraindication",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "not_over_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "not",
+   "nodes": {
+    "not": {
+     "id": "not",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "contraindication == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "contraindication",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "x"
+ },
+ {
+  "name": "not_inside_and_blocks",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "ok",
+      "not"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "ok": {
+     "id": "ok",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "indication == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "indication",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "not": {
+     "id": "not",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "exclusion == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "exclusion",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "indication",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "exclusion",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "x"
+ },
+ {
+  "name": "not_inside_and_passes",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "ok",
+      "not"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "ok": {
+     "id": "ok",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "indication == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "indication",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "not": {
+     "id": "not",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "exclusion == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "exclusion",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "indication",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "exclusion",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "not_inside_and_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "and",
+   "nodes": {
+    "and": {
+     "id": "and",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "ok",
+      "not"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "ok": {
+     "id": "ok",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "indication == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "indication",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "not": {
+     "id": "not",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "exclusion == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "exclusion",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "indication",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "x"
+ },
+ {
+  "name": "n_of_met",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "n_of_exactly_met",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "n_of_unreachable",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "b"
+ },
+ {
+  "name": "n_of_still_reachable",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "b"
+ },
+ {
+  "name": "n_of_all_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "n_of_all_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b",
+      "c"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "c": {
+     "id": "c",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "n_of_equals_len_met",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "n_of_equals_len_missed",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "a",
+      "b"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "b"
+ },
+ {
+  "name": "n_of_one_behaves_like_or",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 1,
+     "children": [
+      "a",
+      "b"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "n_of_one_all_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "n",
+   "nodes": {
+    "n": {
+     "id": "n",
+     "type": "N_OF",
+     "n": 1,
+     "children": [
+      "a",
+      "b"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "a": {
+     "id": "a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "b": {
+     "id": "b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "a",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "a"
+ },
+ {
+  "name": "deep_all_paths_satisfied",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "diagnosis",
+    "value": [
+     "spondylolisthesis"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_duration_months",
+    "value": 8,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_documented",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "active_infection",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "deep_or_rescued_by_alternative",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "diagnosis",
+    "value": [
+     "spondylolisthesis"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_duration_months",
+    "value": 2,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_documented",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_contraindicated",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "active_infection",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "deep_short_therapy_blocks",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "diagnosis",
+    "value": [
+     "spondylolisthesis"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_duration_months",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_documented",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_contraindicated",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "active_infection",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "pt_months"
+ },
+ {
+  "name": "deep_exclusion_blocks_at_depth_one",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "diagnosis",
+    "value": [
+     "spondylolisthesis"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_duration_months",
+    "value": 8,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_documented",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "active_infection",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "active_infection"
+ },
+ {
+  "name": "deep_two_independent_failures",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "diagnosis",
+    "value": [
+     "low_back_pain"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_duration_months",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_documented",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_contraindicated",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "active_infection",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "indication"
+ },
+ {
+  "name": "deep_missing_documentation_abstains",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "diagnosis",
+    "value": [
+     "spondylolisthesis"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "pt_duration_months",
+    "value": 8,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "active_infection",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "pt_documented"
+ },
+ {
+  "name": "deep_all_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "indication",
+      "conservative",
+      "safety"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "indication": {
+     "id": "indication",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "diagnosis includes ['spondylolisthesis']",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "diagnosis",
+      "op": "includes",
+      "value": [
+       "spondylolisthesis"
+      ],
+      "unit": null
+     }
+    },
+    "conservative": {
+     "id": "conservative",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "pt_path",
+      "contraindicated"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_path": {
+     "id": "pt_path",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "pt_months",
+      "pt_documented"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "pt_months": {
+     "id": "pt_months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "pt_documented": {
+     "id": "pt_documented",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_documented == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_documented",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "contraindicated": {
+     "id": "contraindicated",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_contraindicated == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_contraindicated",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "safety": {
+     "id": "safety",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "active_infection"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "active_infection": {
+     "id": "active_infection",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "active_infection == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "active_infection",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "indication"
+ },
+ {
+  "name": "five_deep_satisfied",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "l0",
+   "nodes": {
+    "l0": {
+     "id": "l0",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "l1",
+      "sibling"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "sibling": {
+     "id": "sibling",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "sibling == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "sibling",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l1": {
+     "id": "l1",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "l2",
+      "alt1"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alt1": {
+     "id": "alt1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alt1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alt1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l2": {
+     "id": "l2",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "l3",
+      "alt2"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alt2": {
+     "id": "alt2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alt2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alt2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l3": {
+     "id": "l3",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "d1",
+      "d2",
+      "d3"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "d1": {
+     "id": "d1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "d2": {
+     "id": "d2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "d3": {
+     "id": "d3",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d3 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d3",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "sibling",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "alt2",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "d1",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "d2",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "d3",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "five_deep_blocked_at_top",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "l0",
+   "nodes": {
+    "l0": {
+     "id": "l0",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "l1",
+      "sibling"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "sibling": {
+     "id": "sibling",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "sibling == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "sibling",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l1": {
+     "id": "l1",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "l2",
+      "alt1"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alt1": {
+     "id": "alt1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alt1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alt1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l2": {
+     "id": "l2",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "l3",
+      "alt2"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alt2": {
+     "id": "alt2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alt2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alt2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l3": {
+     "id": "l3",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "d1",
+      "d2",
+      "d3"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "d1": {
+     "id": "d1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "d2": {
+     "id": "d2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "d3": {
+     "id": "d3",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d3 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d3",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "sibling",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "alt1",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "sibling"
+ },
+ {
+  "name": "five_deep_unknown_deep_branch",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "l0",
+   "nodes": {
+    "l0": {
+     "id": "l0",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "l1",
+      "sibling"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "sibling": {
+     "id": "sibling",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "sibling == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "sibling",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l1": {
+     "id": "l1",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "l2",
+      "alt1"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alt1": {
+     "id": "alt1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alt1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alt1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l2": {
+     "id": "l2",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "l3",
+      "alt2"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alt2": {
+     "id": "alt2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alt2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alt2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "l3": {
+     "id": "l3",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "d1",
+      "d2",
+      "d3"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "d1": {
+     "id": "d1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "d2": {
+     "id": "d2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "d3": {
+     "id": "d3",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "d3 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "d3",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "sibling",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "alt1",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "alt2",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "d1",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "d2"
+ },
+ {
+  "name": "rank_false_over_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "false_leaf",
+      "unknown_leaf"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "false_leaf": {
+     "id": "false_leaf",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "bmi >= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "bmi",
+      "op": ">=",
+      "value": 35,
+      "unit": null
+     }
+    },
+    "unknown_leaf": {
+     "id": "unknown_leaf",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "counselling == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "counselling",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "bmi",
+    "value": 30,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "false_leaf"
+ },
+ {
+  "name": "rank_shallowest_wins",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "shallow",
+      "branch"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "shallow": {
+     "id": "shallow",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "shallow == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "shallow",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "branch": {
+     "id": "branch",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "deep_a",
+      "deep_b"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "deep_a": {
+     "id": "deep_a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "deep_a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "deep_a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "deep_b": {
+     "id": "deep_b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "deep_b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "deep_b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "shallow",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "deep_a",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "deep_b",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "shallow"
+ },
+ {
+  "name": "rank_smallest_delta_wins",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "months",
+      "bmi"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "months": {
+     "id": "months",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "pt_duration_months >= 6",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "pt_duration_months",
+      "op": ">=",
+      "value": 6,
+      "unit": "months"
+     }
+    },
+    "bmi": {
+     "id": "bmi",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "bmi >= 75",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "bmi",
+      "op": ">=",
+      "value": 75,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "pt_duration_months",
+    "value": 4,
+    "unit": "months",
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "bmi",
+    "value": 35,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "months"
+ },
+ {
+  "name": "rank_node_id_tiebreak",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "alpha",
+      "beta"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "alpha": {
+     "id": "alpha",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "alpha == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "alpha",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "beta": {
+     "id": "beta",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "beta == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "beta",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "alpha",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "beta",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "alpha"
+ },
+ {
+  "name": "rank_or_all_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "opt_a",
+      "opt_b"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "opt_a": {
+     "id": "opt_a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "opt_a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "opt_a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "opt_b": {
+     "id": "opt_b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "opt_b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "opt_b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "opt_a",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "opt_b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "opt_a"
+ },
+ {
+  "name": "rank_ignores_non_pivotal_leaf",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "gate",
+      "choice"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "gate": {
+     "id": "gate",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "gate == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "gate",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "choice": {
+     "id": "choice",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "opt_a",
+      "opt_b"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "opt_a": {
+     "id": "opt_a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "opt_a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "opt_a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "opt_b": {
+     "id": "opt_b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "opt_b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "opt_b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "gate",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "opt_a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "opt_b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "gate"
+ },
+ {
+  "name": "approved_has_no_blocking_node",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "gate",
+      "choice"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "gate": {
+     "id": "gate",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "gate == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "gate",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "choice": {
+     "id": "choice",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "opt_a",
+      "opt_b"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "opt_a": {
+     "id": "opt_a",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "opt_a == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "opt_a",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "opt_b": {
+     "id": "opt_b",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "opt_b == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "opt_b",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "gate",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "opt_a",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "opt_b",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "n_of_blocking_smallest_delta",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "N_OF",
+     "n": 2,
+     "children": [
+      "c1",
+      "c2",
+      "c3"
+     ],
+     "label": "N_OF",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "c1": {
+     "id": "c1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c1 >= 10",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c1",
+      "op": ">=",
+      "value": 10,
+      "unit": null
+     }
+    },
+    "c2": {
+     "id": "c2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c2 >= 10",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c2",
+      "op": ">=",
+      "value": 10,
+      "unit": null
+     }
+    },
+    "c3": {
+     "id": "c3",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "c3 >= 10",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "c3",
+      "op": ">=",
+      "value": 10,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "c1",
+    "value": 2,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c2",
+    "value": 9,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "c3",
+    "value": 1,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "c2"
+ },
+ {
+  "name": "single_leaf_root_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "single_leaf_root_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "root"
+ },
+ {
+  "name": "two_leaves_one_fact_key",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "low",
+      "high"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "low": {
+     "id": "low",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "bmi >= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "bmi",
+      "op": ">=",
+      "value": 35,
+      "unit": null
+     }
+    },
+    "high": {
+     "id": "high",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "bmi <= 60",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "bmi",
+      "op": "<=",
+      "value": 60,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "bmi",
+    "value": 40,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "two_leaves_one_fact_key_blocked",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "AND",
+     "n": null,
+     "children": [
+      "low",
+      "high"
+     ],
+     "label": "AND",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "low": {
+     "id": "low",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "bmi >= 35",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "bmi",
+      "op": ">=",
+      "value": 35,
+      "unit": null
+     }
+    },
+    "high": {
+     "id": "high",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "bmi <= 60",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "bmi",
+      "op": "<=",
+      "value": 60,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "bmi",
+    "value": 70,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "high"
+ },
+ {
+  "name": "unused_facts_are_ignored",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "k == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "k",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "k",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "unused",
+    "value": 99,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "not_over_or_clean",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "any_exclusion"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "any_exclusion": {
+     "id": "any_exclusion",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "e1",
+      "e2"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "e1": {
+     "id": "e1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "e1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "e1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "e2": {
+     "id": "e2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "e2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "e2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "e1",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "e2",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "not_over_or_one_hit",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "any_exclusion"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "any_exclusion": {
+     "id": "any_exclusion",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "e1",
+      "e2"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "e1": {
+     "id": "e1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "e1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "e1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "e2": {
+     "id": "e2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "e2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "e2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "e1",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   },
+   {
+    "key": "e2",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "e2"
+ },
+ {
+  "name": "not_over_or_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "any_exclusion"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "any_exclusion": {
+     "id": "any_exclusion",
+     "type": "OR",
+     "n": null,
+     "children": [
+      "e1",
+      "e2"
+     ],
+     "label": "OR",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "e1": {
+     "id": "e1",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "e1 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "e1",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    },
+    "e2": {
+     "id": "e2",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "e2 == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "e2",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "e1",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "e2"
+ },
+ {
+  "name": "double_negation_true",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "inner"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "inner": {
+     "id": "inner",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "x == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "x",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "x",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "TRUE",
+  "expected_blocking_node": null
+ },
+ {
+  "name": "double_negation_false",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "inner"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "inner": {
+     "id": "inner",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "x == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "x",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [
+   {
+    "key": "x",
+    "value": false,
+    "unit": null,
+    "confidence": 1.0,
+    "source_span": [
+     0,
+     4
+    ],
+    "evidence_text": "stub"
+   }
+  ],
+  "expected_state": "FALSE",
+  "expected_blocking_node": "x"
+ },
+ {
+  "name": "double_negation_unknown",
+  "tree": {
+   "policy_id": "fixture",
+   "title": "parity fixture",
+   "source_url": "https://example.invalid/fixture",
+   "source_type": "NCD",
+   "root": "root",
+   "nodes": {
+    "root": {
+     "id": "root",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "inner"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "inner": {
+     "id": "inner",
+     "type": "NOT",
+     "n": null,
+     "children": [
+      "x"
+     ],
+     "label": "NOT",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": null
+    },
+    "x": {
+     "id": "x",
+     "type": "LEAF",
+     "n": null,
+     "children": [],
+     "label": "x == True",
+     "source_ref": {
+      "section": "fixture",
+      "url": "https://example.invalid/fixture"
+     },
+     "predicate": {
+      "key": "x",
+      "op": "==",
+      "value": true,
+      "unit": null
+     }
+    }
+   }
+  },
+  "facts": [],
+  "expected_state": "UNKNOWN",
+  "expected_blocking_node": "x"
+ }
+]

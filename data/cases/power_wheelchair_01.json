@@ -1,0 +1,111 @@
+{
+ "case_id": "power_wheelchair_01",
+ "policy_id": "power_wheelchair",
+ "title": "72M, post-stroke, power wheelchair",
+ "synthetic": true,
+ "note_text": "PHYSICAL MEDICINE AND REHABILITATION NOTE \u2014 SYNTHETIC TEACHING CASE\n\n72-year-old man 8 months after a left middle cerebral artery infarct, assessed for mobility\nequipment in the home.\n\nFUNCTION: Dense right hemiparesis. He cannot cross his one-bedroom flat to reach the toilet\nor kitchen without assistance and is unable to accomplish mobility-related activities of\ndaily living entirely on his own.\n\nOTHER LIMITATIONS: Cognition intact, MoCA 27/30; vision corrected and adequate. No other\ncondition limits his participation in these activities.\n\nTRIALS: A cane and a rollator were both trialled in the clinic gym and in the home; neither\nresolved the functional mobility deficit, as he cannot maintain standing balance with\nright-sided weakness. He is unable to self-propel a manual wheelchair, and he lives alone\nwith no caregiver available, willing and able to propel one for him. He could not maintain\nthe trunk control needed to operate a scooter safely.\n\nENVIRONMENT: Flat is single level with wide doorways; the home supports wheelchair use.\n\nSAFETY: Demonstrated safe joystick control of a power wheelchair over two sessions. The\npower wheelchair's seating and control features are needed for him to participate in these\nactivities.",
+ "facts": [
+  {
+   "key": "prevents_mradls",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    314,
+    387
+   ],
+   "evidence_text": "unable to accomplish mobility-related activities of\ndaily living entirely"
+  },
+  {
+   "key": "other_limiting_conditions",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    481,
+    544
+   ],
+   "evidence_text": "No other\ncondition limits his participation in these activities"
+  },
+  {
+   "key": "safe_operation_demonstrated",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1058,
+    1114
+   ],
+   "evidence_text": "Demonstrated safe joystick control of a power wheelchair"
+  },
+  {
+   "key": "cane_or_walker_sufficient",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    631,
+    679
+   ],
+   "evidence_text": "neither\nresolved the functional mobility deficit"
+  },
+  {
+   "key": "home_environment_supports_wheelchair",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1015,
+    1047
+   ],
+   "evidence_text": "the home supports wheelchair use"
+  },
+  {
+   "key": "can_self_propel_manual_wheelchair",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    747,
+    794
+   ],
+   "evidence_text": "He is unable to self-propel a manual wheelchair"
+  },
+  {
+   "key": "caregiver_available_for_manual_wheelchair",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    820,
+    874
+   ],
+   "evidence_text": "no caregiver available, willing and able to propel one"
+  },
+  {
+   "key": "can_operate_pov",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    887,
+    958
+   ],
+   "evidence_text": "could not maintain\nthe trunk control needed to operate a scooter safely"
+  },
+  {
+   "key": "power_features_needed",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1157,
+    1196
+   ],
+   "evidence_text": "seating and control features are needed"
+  }
+ ],
+ "gold_decision": "APPROVE",
+ "gold_blocking_node": null,
+ "note_on_gold": ""
+}

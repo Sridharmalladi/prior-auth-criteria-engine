@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluation — Prior-Auth Criteria Engine</title>
+<meta name="description" content="Decision accuracy, clause attribution, calibration and abstention quality for the criteria graph against a flat RAG baseline.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>📊</text></svg>">
+</head>
+<body>
+
+<header class="site">
+  <h1>Evaluation</h1>
+  <p class="tagline">
+    Four measures over 20 synthetic cases and 8 policies, for the criteria graph and for a flat
+    retrieval baseline. <strong>n = 20.</strong> Every number on this page rests on twenty cases
+    written by the author of the system being measured; treat them as a demonstration of method,
+    not as evidence of accuracy in production.
+  </p>
+  <nav class="site">
+    <a href="index.html">Demo</a>
+    <a href="eval.html" aria-current="page">Evaluation</a>
+    <a href="https://github.com/your-account/prior-auth-criteria-engine">Repository</a>
+  </nav>
+</header>
+
+<p class="status" id="status">Loading evaluation results…</p>
+<p class="status" id="baseline-status"></p>
+
+<div class="charts" id="charts"></div>
+
+<section class="prose">
+  <h2>Failure cases</h2>
+  <div id="failures"></div>
+</section>
+
+<section class="prose">
+  <h2>Method</h2>
+  <p>
+    <strong>Data.</strong> Eight published Medicare coverage policies: six NCDs parsed from the full
+    text returned by the CMS Medicare Coverage Database API, and two LCD-derived trees that are
+    paraphrases — CMS returns 401 for LCD detail text without a licence token, so those thresholds
+    are unverified and are labelled as such in the UI. Twenty synthetic notes, written for this
+    project, distributed 8 approve / 8 deny / 4 indeterminate, with three cases carrying two or more
+    independent failures.
+  </p>
+  <p>
+    <strong>Both systems.</strong> The criteria graph evaluates hand-labelled gold facts against the
+    policy tree with three-valued logic. The baseline chunks the same policy text at roughly 400
+    tokens with 50 of overlap, embeds with all-MiniLM-L6-v2, retrieves the top 5 chunks by cosine
+    similarity, and asks the same model at the same temperature for a decision and a citation.
+  </p>
+  <p>
+    <strong>Baseline tuning is disclosed.</strong> The baseline prompt was written and revised to be
+    competent — it is given the retrieved text, the note, an explicit three-class output contract and
+    an instruction to abstain when documentation is missing. Its free-text citation is mapped onto a
+    node by token overlap against node labels, predicate keys and section names, and the best match
+    wins. That mapping is deliberately generous: a citation that merely mentions the right subject
+    scores. A strawman baseline would make this page worthless.
+  </p>
+  <p>
+    <strong>What decision accuracy here does and does not measure.</strong> Both systems are scored on
+    the same gold facts, so this figure isolates whether the coverage logic is applied correctly. It
+    does not measure extraction. An end-to-end number would require scoring LLM-extracted facts, which
+    is a separate run and a separate claim.
+  </p>
+  <p>
+    <strong>Prompts and code.</strong> The extraction prompt is in <code>pipeline/extract_facts.py</code>,
+    the policy-parsing prompt in <code>pipeline/parse_policy.py</code>, and the baseline prompt in
+    <code>pipeline/baseline_rag.py</code>.
+  </p>
+  <ul id="metric-notes"></ul>
+</section>
+
+<footer class="site">
+  <p>All cases are synthetic. The engine determines criteria satisfaction against published policy; it does not predict payer behaviour.</p>
+  <p>Confidence is rule-derived from the tree by a published formula and is not calibrated against payer outcomes.</p>
+</footer>
+
+<script type="module" src="js/charts.js"></script>
+</body>
+</html>

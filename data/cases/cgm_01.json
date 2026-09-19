@@ -1,0 +1,78 @@
+{
+ "case_id": "cgm_01",
+ "policy_id": "cgm",
+ "title": "59F, type 1 diabetes on insulin, CGM requested",
+ "synthetic": true,
+ "note_text": "ENDOCRINOLOGY CLINIC NOTE \u2014 SYNTHETIC TEACHING CASE\n\n59-year-old woman with type 1 diabetes mellitus of 31 years' duration.\n\nTREATMENT: Multiple daily injections, four times daily, with insulin glargine and insulin\naspart. Seen in this clinic today by her treating endocrinologist.\n\nGLYCAEMIC CONTROL: HbA1c 8.1%. Two episodes of level 2 hypoglycaemia in the past month, one\nrequiring assistance from her partner overnight.\n\nDEVICE HISTORY: She has never been supplied with a continuous glucose monitor and does not\nhave an active device from another supplier.\n\nTRAINING: Completed the structured device training session with the diabetes specialist\nnurse at today's visit, including sensor insertion, alarm settings and data review.\n\nPLAN: Continuous glucose monitor prescribed.",
+ "facts": [
+  {
+   "key": "diabetes_diagnosis",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    76,
+    122
+   ],
+   "evidence_text": "type 1 diabetes mellitus of 31 years' duration"
+  },
+  {
+   "key": "insulin_treated",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    136,
+    179
+   ],
+   "evidence_text": "Multiple daily injections, four times daily"
+  },
+  {
+   "key": "problematic_hypoglycemia_history",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    314,
+    369
+   ],
+   "evidence_text": "Two episodes of level 2 hypoglycaemia in the past month"
+  },
+  {
+   "key": "months_since_practitioner_visit",
+   "value": 0,
+   "unit": "months",
+   "confidence": 0.95,
+   "source_span": [
+    223,
+    280
+   ],
+   "evidence_text": "Seen in this clinic today by her treating endocrinologist"
+  },
+  {
+   "key": "device_training_completed",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    572,
+    620
+   ],
+   "evidence_text": "Completed the structured device training session"
+  },
+  {
+   "key": "active_cgm_already_supplied",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    507,
+    559
+   ],
+   "evidence_text": "does not\nhave an active device from another supplier"
+  }
+ ],
+ "gold_decision": "APPROVE",
+ "gold_blocking_node": null,
+ "note_on_gold": ""
+}

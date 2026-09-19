@@ -1,0 +1,67 @@
+{
+ "case_id": "pet_02",
+ "policy_id": "pet_oncology",
+ "title": "70M, prostate adenocarcinoma, initial strategy",
+ "synthetic": true,
+ "note_text": "ONCOLOGY CLINIC NOTE \u2014 SYNTHETIC TEACHING CASE\n\n70-year-old man with newly diagnosed prostate cancer.\n\nPATHOLOGY: Transrectal biopsy shows adenocarcinoma of the prostate, Gleason 4+3, in 7 of 12\ncores. Biopsy-proven disease.\n\nCLINICAL QUESTION: The multidisciplinary team asks for FDG PET-CT to determine the anatomic\nextent of tumour before deciding between radical prostatectomy and radiotherapy.\n\nTREATMENT CONTEXT: Initial anti-tumour treatment strategy. No prior anti-cancer therapy and\nno previous PET imaging.\n\nASSESSMENT: Newly diagnosed prostate adenocarcinoma. FDG PET for the initial treatment\nstrategy in prostate adenocarcinoma is a nationally non-covered indication; a PSMA PET has\nbeen requested instead.",
+ "facts": [
+  {
+   "key": "biopsy_proven_cancer",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    202,
+    223
+   ],
+   "evidence_text": "Biopsy-proven disease"
+  },
+  {
+   "key": "determines_tumor_extent",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    295,
+    334
+   ],
+   "evidence_text": "determine the anatomic\nextent of tumour"
+  },
+  {
+   "key": "treatment_strategy",
+   "value": "initial",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    419,
+    457
+   ],
+   "evidence_text": "Initial anti-tumour treatment strategy"
+  },
+  {
+   "key": "tumor_type",
+   "value": "prostate_adenocarcinoma",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    139,
+    182
+   ],
+   "evidence_text": "adenocarcinoma of the prostate, Gleason 4+3"
+  },
+  {
+   "key": "study_purpose",
+   "value": "distant_staging",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    335,
+    397
+   ],
+   "evidence_text": "before deciding between radical prostatectomy and radiotherapy"
+  }
+ ],
+ "gold_decision": "DENY",
+ "gold_blocking_node": "prostate",
+ "note_on_gold": "Explicitly non-covered tumour type for the initial treatment strategy."
+}

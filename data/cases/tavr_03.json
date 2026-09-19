@@ -1,0 +1,177 @@
+{
+ "case_id": "tavr_03",
+ "policy_id": "tavr",
+ "title": "83M, two independent failures: no surgeon assessment, PCI volume short",
+ "synthetic": true,
+ "note_text": "STRUCTURAL HEART CLINIC NOTE \u2014 SYNTHETIC TEACHING CASE\n\n83-year-old man with severe symptomatic aortic stenosis, referred for TAVR.\n\nHPI: Two admissions with decompensated heart failure in four months. Aortic valve area\n0.6 cm2, mean gradient 52 mm Hg, symptomatic severe aortic stenosis.\n\nHEART TEAM: Seen and examined by the interventional cardiologist. The cardiac surgeon has\nreviewed the imaging remotely but has not examined the patient face-to-face; a surgical\nassessment has not yet taken place. The interventional cardiologist's rationale is\ndocumented. The surgeon has confirmed availability to participate jointly in the procedure.\n\nDEVICE: Balloon-expandable system with FDA premarket approval.\n\nSITE: New TAVR programme with no prior TAVR experience. Institutional figures for the\npreceding period: 62 open heart surgeries in the previous year, 24 aortic valve related\nprocedures over the previous two years, 3 physicians with cardiac surgery privileges,\n2 physicians with interventional cardiology privileges, and 210 percutaneous coronary\ninterventions per year. On-site valve surgery and interventional cardiology programmes with\nan experienced post-procedure intensive care unit.\n\nASSESSMENT: Neither the surgical assessment nor the institutional PCI volume meets the\ncoverage conditions.",
+ "facts": [
+  {
+   "key": "symptomatic_aortic_stenosis",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    253,
+    287
+   ],
+   "evidence_text": "symptomatic severe aortic stenosis"
+  },
+  {
+   "key": "fda_approved_system",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    652,
+    705
+   ],
+   "evidence_text": "Balloon-expandable system with FDA premarket approval"
+  },
+  {
+   "key": "cardiac_surgeon_examined",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    414,
+    455
+   ],
+   "evidence_text": "has not examined the patient face-to-face"
+  },
+  {
+   "key": "interventional_cardiologist_examined",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    302,
+    354
+   ],
+   "evidence_text": "Seen and examined by the interventional cardiologist"
+  },
+  {
+   "key": "heart_team_rationale_documented",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    504,
+    561
+   ],
+   "evidence_text": "The interventional cardiologist's rationale is\ndocumented"
+  },
+  {
+   "key": "joint_intraoperative_participation",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    579,
+    641
+   ],
+   "evidence_text": "confirmed availability to participate jointly in the procedure"
+  },
+  {
+   "key": "onsite_valve_surgery_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1078,
+    1099
+   ],
+   "evidence_text": "On-site valve surgery"
+  },
+  {
+   "key": "onsite_interventional_cardiology_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1104,
+    1195
+   ],
+   "evidence_text": "interventional cardiology programmes with\nan experienced post-procedure intensive care unit"
+  },
+  {
+   "key": "post_procedure_icu",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1149,
+    1195
+   ],
+   "evidence_text": "experienced post-procedure intensive care unit"
+  },
+  {
+   "key": "established_tavr_program",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    714,
+    762
+   ],
+   "evidence_text": "New TAVR programme with no prior TAVR experience"
+  },
+  {
+   "key": "open_heart_surgeries_prior_year",
+   "value": 62,
+   "unit": "cases",
+   "confidence": 0.95,
+   "source_span": [
+    812,
+    856
+   ],
+   "evidence_text": "62 open heart surgeries in the previous year"
+  },
+  {
+   "key": "aortic_valve_procedures_prior_2_years",
+   "value": 24,
+   "unit": "cases",
+   "confidence": 0.95,
+   "source_span": [
+    858,
+    920
+   ],
+   "evidence_text": "24 aortic valve related\nprocedures over the previous two years"
+  },
+  {
+   "key": "cardiac_surgeons_on_staff",
+   "value": 3,
+   "unit": "physicians",
+   "confidence": 0.95,
+   "source_span": [
+    922,
+    966
+   ],
+   "evidence_text": "3 physicians with cardiac surgery privileges"
+  },
+  {
+   "key": "interventional_cardiologists_on_staff",
+   "value": 2,
+   "unit": "physicians",
+   "confidence": 0.95,
+   "source_span": [
+    968,
+    1022
+   ],
+   "evidence_text": "2 physicians with interventional cardiology privileges"
+  },
+  {
+   "key": "pci_per_year",
+   "value": 210,
+   "unit": "cases",
+   "confidence": 0.95,
+   "source_span": [
+    1028,
+    1076
+   ],
+   "evidence_text": "210 percutaneous coronary\ninterventions per year"
+  }
+ ],
+ "gold_decision": "DENY",
+ "gold_blocking_node": "surgeon_exam",
+ "note_on_gold": "Two independent failures: no face-to-face surgical assessment, and institutional PCI volume of 210 against a 300 threshold. The missing surgical assessment is the one a reviewer would cite, since it concerns the patient rather than the site."
+}

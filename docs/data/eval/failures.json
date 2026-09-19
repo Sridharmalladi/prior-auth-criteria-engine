@@ -1,0 +1,46 @@
+[
+ {
+  "case_id": "cgm_02",
+  "title": "63M, type 2 diabetes, last practitioner visit undated",
+  "policy_id": "cgm",
+  "kind": "attribution",
+  "gold_decision": "INDETERMINATE",
+  "predicted_decision": "INDETERMINATE",
+  "gold_blocking_node": "visit_recency",
+  "predicted_blocking_node": "training",
+  "diagnosis": "right verdict, wrong clause: cited 'Trained, or scheduled for training, on the device', a reviewer would cite 'Visit with the treating practitioner within the last 6 months'"
+ },
+ {
+  "case_id": "home_oxygen_02",
+  "title": "69M, breathlessness without qualifying hypoxaemia",
+  "policy_id": "home_oxygen",
+  "kind": "attribution",
+  "gold_decision": "DENY",
+  "predicted_decision": "DENY",
+  "gold_blocking_node": "sat_rest",
+  "predicted_blocking_node": "breathlessness",
+  "diagnosis": "right verdict, wrong clause: cited 'Breathlessness without cor pulmonale or evidence of hypoxemia', a reviewer would cite 'Arterial oxygen saturation at or below 88% at rest on room air'"
+ },
+ {
+  "case_id": "lumbar_fusion_03",
+  "title": "61M, three independent failures",
+  "policy_id": "lumbar_fusion",
+  "kind": "attribution",
+  "gold_decision": "DENY",
+  "predicted_decision": "DENY",
+  "gold_blocking_node": "active_infection",
+  "predicted_blocking_node": "conservative_months",
+  "diagnosis": "right verdict, wrong clause: cited 'At least 6 months of conservative therapy', a reviewer would cite 'Active spinal infection'"
+ },
+ {
+  "case_id": "tavr_02",
+  "title": "79F, new programme, volume figures not supplied",
+  "policy_id": "tavr",
+  "kind": "attribution",
+  "gold_decision": "INDETERMINATE",
+  "predicted_decision": "INDETERMINATE",
+  "gold_blocking_node": "open_heart_volume",
+  "predicted_blocking_node": "existing_program",
+  "diagnosis": "right verdict, wrong clause: cited 'Hospital has an established TAVR program meeting the experienced-program volumes', a reviewer would cite 'At least 50 open heart surgeries in the previous year'"
+ }
+]

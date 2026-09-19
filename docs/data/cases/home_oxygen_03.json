@@ -1,0 +1,78 @@
+{
+ "case_id": "home_oxygen_03",
+ "policy_id": "home_oxygen",
+ "title": "77F, oximetry undated, testing conditions not documented",
+ "synthetic": true,
+ "note_text": "DISCHARGE SUMMARY \u2014 SYNTHETIC TEACHING CASE\n\n77-year-old woman discharged after an admission for a COPD exacerbation.\n\nHOSPITAL COURSE: Treated with systemic corticosteroids, nebulised bronchodilators and a\nfive-day course of antibiotics. Weaned from 4 L/min to 2 L/min by day three.\n\nTESTING: A pulse oximetry reading of 87% is recorded in the chart. The entry does not state\nwhether the patient was on room air or supplemental oxygen at the time, and the date and\ntime of the reading are not recorded. No arterial blood gas was obtained during this\nadmission.\n\nEXAMINATION AT DISCHARGE: No peripheral oedema. No documented echocardiogram this\nadmission. Haematocrit 41%. No angina. No severe peripheral vascular disease. Not\nterminally ill.\n\nPLAN: Discharge home with the oxygen concentrator she arrived with, pending outpatient\nretesting on room air at the time of need.",
+ "facts": [
+  {
+   "key": "oxygen_saturation_rest_percent",
+   "value": 87,
+   "unit": "%",
+   "confidence": 0.95,
+   "source_span": [
+    294,
+    350
+   ],
+   "evidence_text": "A pulse oximetry reading of 87% is recorded in the chart"
+  },
+  {
+   "key": "dependent_edema",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    589,
+    610
+   ],
+   "evidence_text": "No peripheral oedema."
+  },
+  {
+   "key": "hematocrit_percent",
+   "value": 41,
+   "unit": "%",
+   "confidence": 0.95,
+   "source_span": [
+    656,
+    671
+   ],
+   "evidence_text": "Haematocrit 41%"
+  },
+  {
+   "key": "angina_without_hypoxemia",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    673,
+    683
+   ],
+   "evidence_text": "No angina."
+  },
+  {
+   "key": "severe_peripheral_vascular_disease",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    684,
+    722
+   ],
+   "evidence_text": "No severe peripheral vascular disease."
+  },
+  {
+   "key": "terminal_illness_not_affecting_breathing",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    723,
+    742
+   ],
+   "evidence_text": "Not\nterminally ill."
+  }
+ ],
+ "gold_decision": "INDETERMINATE",
+ "gold_blocking_node": "time_of_need",
+ "note_on_gold": "The saturation would qualify, but the note never establishes that the test was taken at the time of need on room air, so the record cannot support a decision either way."
+}

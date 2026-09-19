@@ -1,0 +1,38 @@
+name: parity
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install test dependencies
+        # The evaluators are stdlib-only by design; only the test runner and the
+        # schema models need installing, so CI stays fast and the core stays portable.
+        run: python -m pip install --quiet pytest pydantic
+
+      - name: Python evaluator against the fixtures, and against the JS evaluator
+        run: python -m pytest pipeline/tests -q
+
+      - name: JS evaluator against the fixtures (standalone)
+        # Belt and braces: the pytest run shells out to node, but this step fails
+        # loudly if node itself cannot run the module at all.
+        run: node pipeline/tests/parity_js.mjs > /dev/null
+
+      - name: Committed policies and cases are valid
+        run: python -m pytest pipeline/tests/test_data.py -q
+
+      - name: docs/data is in sync with data/
+        run: python pipeline/sync_docs_data.py --check

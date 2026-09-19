@@ -1,0 +1,246 @@
+{
+ "policy_id": "bariatric_surgery",
+ "title": "Bariatric Surgery for Co-Morbid Conditions Related to Morbid Obesity (NCD 100.1)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5",
+ "source_type": "NCD",
+ "provenance": "hand-written from the fetched NCD text; every node cites its section",
+ "verification": "checked against source text",
+ "root": "root",
+ "nodes": {
+  "bmi": {
+   "id": "bmi",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Body-mass index at or above 35",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "bmi",
+    "op": ">=",
+    "value": 35,
+    "unit": "kg/m2"
+   }
+  },
+  "comorbid_diabetes": {
+   "id": "comorbid_diabetes",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Type 2 diabetes mellitus",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "type_2_diabetes",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "comorbid_sleep_apnea": {
+   "id": "comorbid_sleep_apnea",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Obstructive sleep apnea",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "obstructive_sleep_apnea",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "comorbid_hypertension": {
+   "id": "comorbid_hypertension",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Hypertension",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "hypertension",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "comorbidity": {
+   "id": "comorbidity",
+   "type": "N_OF",
+   "n": 1,
+   "children": [
+    "comorbid_diabetes",
+    "comorbid_sleep_apnea",
+    "comorbid_hypertension"
+   ],
+   "label": "At least one obesity-related co-morbidity",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": null
+  },
+  "prior_treatment": {
+   "id": "prior_treatment",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Previously unsuccessful with medical treatment for obesity",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "medical_weight_management_failed",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "proc_rygb": {
+   "id": "proc_rygb",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Roux-en-Y gastric bypass",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "procedure",
+    "op": "==",
+    "value": "roux_en_y_gastric_bypass",
+    "unit": null
+   }
+  },
+  "proc_bpd": {
+   "id": "proc_bpd",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Biliopancreatic diversion with duodenal switch",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "procedure",
+    "op": "==",
+    "value": "biliopancreatic_diversion_duodenal_switch",
+    "unit": null
+   }
+  },
+  "proc_lagb": {
+   "id": "proc_lagb",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Laparoscopic adjustable gastric banding",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "procedure",
+    "op": "==",
+    "value": "laparoscopic_adjustable_gastric_banding",
+    "unit": null
+   }
+  },
+  "proc_lsg": {
+   "id": "proc_lsg",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Laparoscopic sleeve gastrectomy",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "procedure",
+    "op": "==",
+    "value": "laparoscopic_sleeve_gastrectomy",
+    "unit": null
+   }
+  },
+  "covered_procedure": {
+   "id": "covered_procedure",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "proc_rygb",
+    "proc_bpd",
+    "proc_lagb",
+    "proc_lsg"
+   ],
+   "label": "A nationally covered bariatric procedure",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": null
+  },
+  "obesity_alone": {
+   "id": "obesity_alone",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Performed for treatment of obesity alone",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": {
+    "key": "indication_is_obesity_alone",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "not_obesity_alone": {
+   "id": "not_obesity_alone",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "obesity_alone"
+   ],
+   "label": "Not for treatment of obesity alone",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": null
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "bmi",
+    "comorbidity",
+    "prior_treatment",
+    "covered_procedure",
+    "not_obesity_alone"
+   ],
+   "label": "Bariatric surgery is covered",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5"
+   },
+   "predicate": null
+  }
+ }
+}

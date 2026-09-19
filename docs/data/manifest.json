@@ -1,0 +1,190 @@
+{
+ "cases": [
+  {
+   "case_id": "bariatric_01",
+   "policy_id": "bariatric_surgery",
+   "title": "52F, BMI 41, type 2 diabetes, RYGB requested",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "bariatric_02",
+   "policy_id": "bariatric_surgery",
+   "title": "44M, BMI 32.4, below threshold",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "bariatric_03",
+   "policy_id": "bariatric_surgery",
+   "title": "58F, BMI 38, weight management history not documented",
+   "gold_decision": "INDETERMINATE"
+  },
+  {
+   "case_id": "cgm_01",
+   "policy_id": "cgm",
+   "title": "59F, type 1 diabetes on insulin, CGM requested",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "cgm_02",
+   "policy_id": "cgm",
+   "title": "63M, type 2 diabetes, last practitioner visit undated",
+   "gold_decision": "INDETERMINATE"
+  },
+  {
+   "case_id": "cochlear_01",
+   "policy_id": "cochlear_implant",
+   "title": "66F, bilateral SNHL, 38% sentence recognition",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "cochlear_02",
+   "policy_id": "cochlear_implant",
+   "title": "71M, 74% sentence recognition with aids",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "home_oxygen_01",
+   "policy_id": "home_oxygen",
+   "title": "74F, COPD, Group II with cor pulmonale",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "home_oxygen_02",
+   "policy_id": "home_oxygen",
+   "title": "69M, breathlessness without qualifying hypoxaemia",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "home_oxygen_03",
+   "policy_id": "home_oxygen",
+   "title": "77F, oximetry undated, testing conditions not documented",
+   "gold_decision": "INDETERMINATE"
+  },
+  {
+   "case_id": "lumbar_fusion_01",
+   "policy_id": "lumbar_fusion",
+   "title": "68F, L4-5 spondylolisthesis, fusion requested",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "lumbar_fusion_02",
+   "policy_id": "lumbar_fusion",
+   "title": "54M, spondylolisthesis, 3 months of therapy",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "lumbar_fusion_03",
+   "policy_id": "lumbar_fusion",
+   "title": "61M, three independent failures",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "pet_01",
+   "policy_id": "pet_oncology",
+   "title": "64F, biopsy-proven lung cancer, initial staging",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "pet_02",
+   "policy_id": "pet_oncology",
+   "title": "70M, prostate adenocarcinoma, initial strategy",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "power_wheelchair_01",
+   "policy_id": "power_wheelchair",
+   "title": "72M, post-stroke, power wheelchair",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "power_wheelchair_02",
+   "policy_id": "power_wheelchair",
+   "title": "68F, two independent failures: walker suffices, caregiver available",
+   "gold_decision": "DENY"
+  },
+  {
+   "case_id": "tavr_01",
+   "policy_id": "tavr",
+   "title": "81M, symptomatic severe AS, experienced programme",
+   "gold_decision": "APPROVE"
+  },
+  {
+   "case_id": "tavr_02",
+   "policy_id": "tavr",
+   "title": "79F, new programme, volume figures not supplied",
+   "gold_decision": "INDETERMINATE"
+  },
+  {
+   "case_id": "tavr_03",
+   "policy_id": "tavr",
+   "title": "83M, two independent failures: no surgeon assessment, PCI volume short",
+   "gold_decision": "DENY"
+  }
+ ],
+ "policies": [
+  {
+   "policy_id": "bariatric_surgery",
+   "title": "Bariatric Surgery for Co-Morbid Conditions Related to Morbid Obesity (NCD 100.1)",
+   "source_type": "NCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=57&ncdver=5",
+   "verification": "checked against source text",
+   "node_count": 14
+  },
+  {
+   "policy_id": "cgm",
+   "title": "Continuous Glucose Monitor (LCD L33822, paraphrased)",
+   "source_type": "LCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=33822&ver=70",
+   "verification": "unverified-paraphrase",
+   "node_count": 9
+  },
+  {
+   "policy_id": "cochlear_implant",
+   "title": "Cochlear Implantation (NCD 50.3)",
+   "source_type": "NCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3",
+   "verification": "checked against source text",
+   "node_count": 14
+  },
+  {
+   "policy_id": "home_oxygen",
+   "title": "Home Use of Oxygen (NCD 240.2)",
+   "source_type": "NCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2",
+   "verification": "checked against source text",
+   "node_count": 28
+  },
+  {
+   "policy_id": "lumbar_fusion",
+   "title": "Lumbar Spinal Fusion (LCD L37848, paraphrased)",
+   "source_type": "LCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18",
+   "verification": "unverified-paraphrase",
+   "node_count": 17
+  },
+  {
+   "policy_id": "pet_oncology",
+   "title": "FDG PET for Oncologic Conditions (NCD 220.6.17)",
+   "source_type": "NCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4",
+   "verification": "checked against source text",
+   "node_count": 23
+  },
+  {
+   "policy_id": "power_wheelchair",
+   "title": "Mobility Assistive Equipment \u2014 power wheelchair (NCD 280.3)",
+   "source_type": "NCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2",
+   "verification": "checked against source text",
+   "node_count": 18
+  },
+  {
+   "policy_id": "tavr",
+   "title": "Transcatheter Aortic Valve Replacement (NCD 20.32)",
+   "source_type": "NCD",
+   "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2",
+   "verification": "checked against source text",
+   "node_count": 20
+  }
+ ]
+}

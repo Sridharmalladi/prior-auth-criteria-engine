@@ -1,0 +1,67 @@
+{
+ "case_id": "pet_01",
+ "policy_id": "pet_oncology",
+ "title": "64F, biopsy-proven lung cancer, initial staging",
+ "synthetic": true,
+ "note_text": "ONCOLOGY CLINIC NOTE \u2014 SYNTHETIC TEACHING CASE\n\n64-year-old woman with a newly diagnosed right upper lobe mass.\n\nPATHOLOGY: CT-guided biopsy confirms non-small cell lung carcinoma, adenocarcinoma subtype.\nBiopsy-proven malignancy.\n\nCLINICAL QUESTION: Treatment planning depends on whether disease is confined to the chest.\nFDG PET-CT is requested to determine the anatomic extent of tumour before committing to\ndefinitive chemoradiotherapy versus surgical resection.\n\nTREATMENT CONTEXT: This is the initial anti-tumour treatment strategy; the patient has not\nreceived any anti-cancer therapy and has had no previous PET studies.\n\nASSESSMENT: Newly diagnosed NSCLC for staging prior to first-line treatment.",
+ "facts": [
+  {
+   "key": "biopsy_proven_cancer",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    205,
+    229
+   ],
+   "evidence_text": "Biopsy-proven malignancy"
+  },
+  {
+   "key": "determines_tumor_extent",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    350,
+    389
+   ],
+   "evidence_text": "determine the anatomic extent of tumour"
+  },
+  {
+   "key": "treatment_strategy",
+   "value": "initial",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    487,
+    537
+   ],
+   "evidence_text": "This is the initial anti-tumour treatment strategy"
+  },
+  {
+   "key": "tumor_type",
+   "value": "non_small_cell_lung",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    150,
+    203
+   ],
+   "evidence_text": "non-small cell lung carcinoma, adenocarcinoma subtype"
+  },
+  {
+   "key": "study_purpose",
+   "value": "distant_staging",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    281,
+    321
+   ],
+   "evidence_text": "whether disease is confined to the chest"
+  }
+ ],
+ "gold_decision": "APPROVE",
+ "gold_blocking_node": null,
+ "note_on_gold": ""
+}

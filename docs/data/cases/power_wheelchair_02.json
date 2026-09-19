@@ -1,0 +1,100 @@
+{
+ "case_id": "power_wheelchair_02",
+ "policy_id": "power_wheelchair",
+ "title": "68F, two independent failures: walker suffices, caregiver available",
+ "synthetic": true,
+ "note_text": "PHYSICAL MEDICINE AND REHABILITATION NOTE \u2014 SYNTHETIC TEACHING CASE\n\n68-year-old woman with osteoarthritis of both knees, requesting a power wheelchair.\n\nFUNCTION: Reports needing to rest twice crossing her house. She cannot complete\nmobility-related activities of daily living within a reasonable time frame without support.\n\nOTHER LIMITATIONS: Cognition and vision intact; no other condition limits participation.\n\nTRIALS: With a fitted four-wheeled walker she completed the kitchen-to-bathroom circuit in\nunder two minutes with no rest break and no loss of balance; the walker resolves her\nfunctional mobility deficit. She was also able to self-propel a manual wheelchair 30 metres\nindoors without difficulty. Her daughter lives in the same house and is available, willing\nand able to assist with a manual wheelchair when needed.\n\nENVIRONMENT: Single-level home with adequate turning space; the environment supports\nwheelchair use.\n\nSAFETY: Operated a power wheelchair safely in the clinic.\n\nASSESSMENT: Mobility deficit is real but is resolved with a walker, and a manual wheelchair\nwith caregiver assistance is available.",
+ "facts": [
+  {
+   "key": "cannot_complete_mradls_timely",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    218,
+    308
+   ],
+   "evidence_text": "cannot complete\nmobility-related activities of daily living within a reasonable time frame"
+  },
+  {
+   "key": "other_limiting_conditions",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    375,
+    414
+   ],
+   "evidence_text": "no other condition limits participation"
+  },
+  {
+   "key": "safe_operation_demonstrated",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    944,
+    992
+   ],
+   "evidence_text": "Operated a power wheelchair safely in the clinic"
+  },
+  {
+   "key": "cane_or_walker_sufficient",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    569,
+    620
+   ],
+   "evidence_text": "the walker resolves her\nfunctional mobility deficit"
+  },
+  {
+   "key": "home_environment_supports_wheelchair",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    894,
+    933
+   ],
+   "evidence_text": "the environment supports\nwheelchair use"
+  },
+  {
+   "key": "can_self_propel_manual_wheelchair",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    635,
+    684
+   ],
+   "evidence_text": "able to self-propel a manual wheelchair 30 metres"
+  },
+  {
+   "key": "caregiver_available_for_manual_wheelchair",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    757,
+    819
+   ],
+   "evidence_text": "available, willing\nand able to assist with a manual wheelchair"
+  },
+  {
+   "key": "power_features_needed",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    1007,
+    1061
+   ],
+   "evidence_text": "Mobility deficit is real but is resolved with a walker"
+  }
+ ],
+ "gold_decision": "DENY",
+ "gold_blocking_node": "cane_walker_insufficient",
+ "note_on_gold": "Two independent failures: the walker resolves the deficit, and a manual wheelchair with an available caregiver is sufficient. The walker finding is the earlier step in the policy's own sequence."
+}

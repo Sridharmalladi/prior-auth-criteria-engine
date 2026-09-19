@@ -1,0 +1,292 @@
+{
+ "policy_id": "lumbar_fusion",
+ "title": "Lumbar Spinal Fusion (LCD L37848, paraphrased)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18",
+ "source_type": "LCD",
+ "provenance": "paraphrased from the published LCD; detail text is licence-gated and was not retrieved",
+ "verification": "unverified-paraphrase",
+ "root": "root",
+ "nodes": {
+  "spondylolisthesis": {
+   "id": "spondylolisthesis",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Documented spondylolisthesis",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "diagnosis",
+    "op": "includes",
+    "value": [
+     "spondylolisthesis"
+    ],
+    "unit": null
+   }
+  },
+  "neuro_symptoms": {
+   "id": "neuro_symptoms",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Neurogenic claudication or radiculopathy documented",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "neurogenic_claudication_or_radiculopathy",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "spondylolisthesis_arm": {
+   "id": "spondylolisthesis_arm",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "spondylolisthesis",
+    "neuro_symptoms"
+   ],
+   "label": "Spondylolisthesis with neurogenic symptoms",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  },
+  "ddd": {
+   "id": "ddd",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Documented degenerative disc disease",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "diagnosis",
+    "op": "includes",
+    "value": [
+     "degenerative_disc_disease"
+    ],
+    "unit": null
+   }
+  },
+  "instability": {
+   "id": "instability",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Segmental instability demonstrated on imaging",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "segmental_instability",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "imaging_correlates": {
+   "id": "imaging_correlates",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Imaging findings correlate with the documented symptoms",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "imaging_correlates_symptoms",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "ddd_arm": {
+   "id": "ddd_arm",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "ddd",
+    "instability",
+    "imaging_correlates"
+   ],
+   "label": "Degenerative disc disease with instability",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  },
+  "indication": {
+   "id": "indication",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "spondylolisthesis_arm",
+    "ddd_arm"
+   ],
+   "label": "A covered surgical indication",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  },
+  "conservative_months": {
+   "id": "conservative_months",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At least 6 months of conservative therapy",
+   "source_ref": {
+    "section": "Conservative care requirement (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "conservative_therapy_months",
+    "op": ">=",
+    "value": 6,
+    "unit": "months"
+   }
+  },
+  "conservative_contraindicated": {
+   "id": "conservative_contraindicated",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Conservative therapy contraindicated or not feasible",
+   "source_ref": {
+    "section": "Conservative care requirement (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "conservative_therapy_contraindicated",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "conservative_care": {
+   "id": "conservative_care",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "conservative_months",
+    "conservative_contraindicated"
+   ],
+   "label": "Conservative care completed or contraindicated",
+   "source_ref": {
+    "section": "Conservative care requirement (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  },
+  "symptom_duration": {
+   "id": "symptom_duration",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Symptoms present for at least 6 months",
+   "source_ref": {
+    "section": "Conservative care requirement (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "symptom_duration_months",
+    "op": ">=",
+    "value": 6,
+    "unit": "months"
+   }
+  },
+  "active_infection": {
+   "id": "active_infection",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Active spinal infection",
+   "source_ref": {
+    "section": "Exclusions (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "active_spinal_infection",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "malignancy": {
+   "id": "malignancy",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Active malignancy at the operative level",
+   "source_ref": {
+    "section": "Exclusions (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": {
+    "key": "active_malignancy_at_level",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "any_exclusion": {
+   "id": "any_exclusion",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "active_infection",
+    "malignancy"
+   ],
+   "label": "Any documented exclusion",
+   "source_ref": {
+    "section": "Exclusions (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  },
+  "no_exclusion": {
+   "id": "no_exclusion",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "any_exclusion"
+   ],
+   "label": "No documented exclusion",
+   "source_ref": {
+    "section": "Exclusions (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "indication",
+    "conservative_care",
+    "symptom_duration",
+    "no_exclusion"
+   ],
+   "label": "Lumbar spinal fusion meets criteria",
+   "source_ref": {
+    "section": "Covered indications (paraphrased)",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=37848&ver=18"
+   },
+   "predicate": null
+  }
+ }
+}

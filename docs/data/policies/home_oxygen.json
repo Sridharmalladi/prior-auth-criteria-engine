@@ -1,0 +1,466 @@
+{
+ "policy_id": "home_oxygen",
+ "title": "Home Use of Oxygen (NCD 240.2)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2",
+ "source_type": "NCD",
+ "provenance": "hand-written from the fetched NCD text; every node cites its section",
+ "verification": "checked against source text",
+ "root": "root",
+ "nodes": {
+  "po2_rest": {
+   "id": "po2_rest",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial PO2 at or below 55 mm Hg at rest on room air",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "arterial_po2_rest_mmhg",
+    "op": "<=",
+    "value": 55,
+    "unit": "mm Hg"
+   }
+  },
+  "sat_rest": {
+   "id": "sat_rest",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial oxygen saturation at or below 88% at rest on room air",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "oxygen_saturation_rest_percent",
+    "op": "<=",
+    "value": 88,
+    "unit": "%"
+   }
+  },
+  "qualifying_at_rest": {
+   "id": "qualifying_at_rest",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "po2_rest",
+    "sat_rest"
+   ],
+   "label": "Qualifying hypoxemia at rest",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "po2_exercise": {
+   "id": "po2_exercise",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial PO2 at or below 55 mm Hg during exercise",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "arterial_po2_exercise_mmhg",
+    "op": "<=",
+    "value": 55,
+    "unit": "mm Hg"
+   }
+  },
+  "sat_exercise": {
+   "id": "sat_exercise",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial oxygen saturation at or below 88% during exercise",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "oxygen_saturation_exercise_percent",
+    "op": "<=",
+    "value": 88,
+    "unit": "%"
+   }
+  },
+  "exercise_desaturation": {
+   "id": "exercise_desaturation",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "po2_exercise",
+    "sat_exercise"
+   ],
+   "label": "Desaturation during exercise",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "sat_rest_adequate": {
+   "id": "sat_rest_adequate",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Resting saturation at or above 89% during the day",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "oxygen_saturation_rest_percent",
+    "op": ">=",
+    "value": 89,
+    "unit": "%"
+   }
+  },
+  "qualifying_on_exercise": {
+   "id": "qualifying_on_exercise",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "exercise_desaturation",
+    "sat_rest_adequate"
+   ],
+   "label": "Exercise desaturation in a patient adequate at rest",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "group_i": {
+   "id": "group_i",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "qualifying_at_rest",
+    "qualifying_on_exercise"
+   ],
+   "label": "Group I hypoxemia",
+   "source_ref": {
+    "section": "B. Group I",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "po2_lower": {
+   "id": "po2_lower",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial PO2 at or above 56 mm Hg",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "arterial_po2_rest_mmhg",
+    "op": ">=",
+    "value": 56,
+    "unit": "mm Hg"
+   }
+  },
+  "po2_upper": {
+   "id": "po2_upper",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial PO2 at or below 59 mm Hg",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "arterial_po2_rest_mmhg",
+    "op": "<=",
+    "value": 59,
+    "unit": "mm Hg"
+   }
+  },
+  "po2_band": {
+   "id": "po2_band",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "po2_lower",
+    "po2_upper"
+   ],
+   "label": "Arterial PO2 of 56-59 mm Hg",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "sat_89": {
+   "id": "sat_89",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Arterial oxygen saturation of 89%",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "oxygen_saturation_rest_percent",
+    "op": "==",
+    "value": 89,
+    "unit": "%"
+   }
+  },
+  "borderline_hypoxemia": {
+   "id": "borderline_hypoxemia",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "po2_band",
+    "sat_89"
+   ],
+   "label": "Borderline hypoxemia",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "dependent_edema": {
+   "id": "dependent_edema",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Dependent edema suggesting congestive heart failure",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "dependent_edema",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "pulmonary_hypertension": {
+   "id": "pulmonary_hypertension",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Pulmonary hypertension or cor pulmonale",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "pulmonary_hypertension_or_cor_pulmonale",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "erythrocythemia": {
+   "id": "erythrocythemia",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Erythrocythemia with haematocrit greater than 56%",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "hematocrit_percent",
+    "op": ">=",
+    "value": 56.1,
+    "unit": "%"
+   }
+  },
+  "secondary_finding": {
+   "id": "secondary_finding",
+   "type": "N_OF",
+   "n": 1,
+   "children": [
+    "dependent_edema",
+    "pulmonary_hypertension",
+    "erythrocythemia"
+   ],
+   "label": "At least one qualifying secondary finding",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "group_ii": {
+   "id": "group_ii",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "borderline_hypoxemia",
+    "secondary_finding"
+   ],
+   "label": "Group II hypoxemia with a secondary finding",
+   "source_ref": {
+    "section": "B. Group II",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "hypoxemia": {
+   "id": "hypoxemia",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "group_i",
+    "group_ii"
+   ],
+   "label": "Qualifying hypoxemia",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "time_of_need": {
+   "id": "time_of_need",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Qualifying blood gas or oximetry performed at the time of need",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "test_at_time_of_need",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "angina": {
+   "id": "angina",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Angina pectoris in the absence of hypoxemia",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "angina_without_hypoxemia",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "breathlessness": {
+   "id": "breathlessness",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Breathlessness without cor pulmonale or evidence of hypoxemia",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "breathlessness_without_cor_pulmonale",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "pvd": {
+   "id": "pvd",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Severe peripheral vascular disease with desaturation in an extremity",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "severe_peripheral_vascular_disease",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "terminal": {
+   "id": "terminal",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Terminal illness not affecting the ability to breathe",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": {
+    "key": "terminal_illness_not_affecting_breathing",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "any_non_covered": {
+   "id": "any_non_covered",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "angina",
+    "breathlessness",
+    "pvd",
+    "terminal"
+   ],
+   "label": "Any nationally non-covered indication",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "not_non_covered": {
+   "id": "not_non_covered",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "any_non_covered"
+   ],
+   "label": "No nationally non-covered indication applies",
+   "source_ref": {
+    "section": "C. Nationally Non-Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "hypoxemia",
+    "time_of_need",
+    "not_non_covered"
+   ],
+   "label": "Home oxygen is covered",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=169&ncdver=2"
+   },
+   "predicate": null
+  }
+ }
+}

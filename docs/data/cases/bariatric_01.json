@@ -1,0 +1,89 @@
+{
+ "case_id": "bariatric_01",
+ "policy_id": "bariatric_surgery",
+ "title": "52F, BMI 41, type 2 diabetes, RYGB requested",
+ "synthetic": true,
+ "note_text": "BARIATRIC SURGERY EVALUATION \u2014 SYNTHETIC TEACHING CASE\n\n52-year-old woman presenting for surgical management of obesity with co-morbid disease.\n\nMEASUREMENTS: Weight 112 kg, height 165 cm, body mass index 41.1 kg/m2, stable over the\npast year.\n\nCO-MORBIDITIES: Type 2 diabetes mellitus diagnosed 7 years ago, currently on metformin and\nsemaglutide with HbA1c 7.9%. Obstructive sleep apnoea on CPAP. Hypertension on two agents.\n\nWEIGHT MANAGEMENT HISTORY: Completed a 12-month medically supervised weight management\nprogramme with dietitian review, documented food diaries and two pharmacotherapy trials.\nMaximum recorded loss 6 kg, since regained. Medical management of obesity has therefore been\nunsuccessful.\n\nINDICATION: Surgery is being offered for treatment of her co-morbid conditions related to\nobesity, not for weight loss alone.\n\nPLAN: Laparoscopic Roux-en-Y gastric bypass. Anaesthetic review completed, no\ncontraindication identified.",
+ "facts": [
+  {
+   "key": "bmi",
+   "value": 41.1,
+   "unit": "kg/m2",
+   "confidence": 0.95,
+   "source_span": [
+    189,
+    215
+   ],
+   "evidence_text": "body mass index 41.1 kg/m2"
+  },
+  {
+   "key": "type_2_diabetes",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    261,
+    307
+   ],
+   "evidence_text": "Type 2 diabetes mellitus diagnosed 7 years ago"
+  },
+  {
+   "key": "obstructive_sleep_apnea",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    365,
+    397
+   ],
+   "evidence_text": "Obstructive sleep apnoea on CPAP"
+  },
+  {
+   "key": "hypertension",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    399,
+    425
+   ],
+   "evidence_text": "Hypertension on two agents"
+  },
+  {
+   "key": "medical_weight_management_failed",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    648,
+    709
+   ],
+   "evidence_text": "Medical management of obesity has therefore been\nunsuccessful"
+  },
+  {
+   "key": "procedure",
+   "value": "roux_en_y_gastric_bypass",
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    845,
+    882
+   ],
+   "evidence_text": "Laparoscopic Roux-en-Y gastric bypass"
+  },
+  {
+   "key": "indication_is_obesity_alone",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    811,
+    836
+   ],
+   "evidence_text": "not for weight loss alone"
+  }
+ ],
+ "gold_decision": "APPROVE",
+ "gold_blocking_node": null,
+ "note_on_gold": ""
+}

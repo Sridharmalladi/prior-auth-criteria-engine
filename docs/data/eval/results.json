@@ -1,0 +1,242 @@
+[
+ {
+  "structured": {
+   "case_id": "bariatric_01",
+   "policy_id": "bariatric_surgery",
+   "title": "52F, BMI 41, type 2 diabetes, RYGB requested",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.6364
+  }
+ },
+ {
+  "structured": {
+   "case_id": "bariatric_02",
+   "policy_id": "bariatric_surgery",
+   "title": "44M, BMI 32.4, below threshold",
+   "gold": "DENY",
+   "gold_blocking_node": "bmi",
+   "predicted": "DENY",
+   "predicted_blocking_node": "bmi",
+   "confidence": 1.0
+  }
+ },
+ {
+  "structured": {
+   "case_id": "bariatric_03",
+   "policy_id": "bariatric_surgery",
+   "title": "58F, BMI 38, weight management history not documented",
+   "gold": "INDETERMINATE",
+   "gold_blocking_node": "prior_treatment",
+   "predicted": "INDETERMINATE",
+   "predicted_blocking_node": "prior_treatment",
+   "confidence": 0.6136
+  }
+ },
+ {
+  "structured": {
+   "case_id": "cgm_01",
+   "policy_id": "cgm",
+   "title": "59F, type 1 diabetes on insulin, CGM requested",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.8667
+  }
+ },
+ {
+  "structured": {
+   "case_id": "cgm_02",
+   "policy_id": "cgm",
+   "title": "63M, type 2 diabetes, last practitioner visit undated",
+   "gold": "INDETERMINATE",
+   "gold_blocking_node": "visit_recency",
+   "predicted": "INDETERMINATE",
+   "predicted_blocking_node": "training",
+   "confidence": 0.7667
+  }
+ },
+ {
+  "structured": {
+   "case_id": "cochlear_01",
+   "policy_id": "cochlear_implant",
+   "title": "66F, bilateral SNHL, 38% sentence recognition",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.7059
+  }
+ },
+ {
+  "structured": {
+   "case_id": "cochlear_02",
+   "policy_id": "cochlear_implant",
+   "title": "71M, 74% sentence recognition with aids",
+   "gold": "DENY",
+   "gold_blocking_node": "sentence_score",
+   "predicted": "DENY",
+   "predicted_blocking_node": "sentence_score",
+   "confidence": 1.0
+  }
+ },
+ {
+  "structured": {
+   "case_id": "home_oxygen_01",
+   "policy_id": "home_oxygen",
+   "title": "74F, COPD, Group II with cor pulmonale",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.3551
+  }
+ },
+ {
+  "structured": {
+   "case_id": "home_oxygen_02",
+   "policy_id": "home_oxygen",
+   "title": "69M, breathlessness without qualifying hypoxaemia",
+   "gold": "DENY",
+   "gold_blocking_node": "sat_rest",
+   "predicted": "DENY",
+   "predicted_blocking_node": "breathlessness",
+   "confidence": 0.9533
+  }
+ },
+ {
+  "structured": {
+   "case_id": "home_oxygen_03",
+   "policy_id": "home_oxygen",
+   "title": "77F, oximetry undated, testing conditions not documented",
+   "gold": "INDETERMINATE",
+   "gold_blocking_node": "time_of_need",
+   "predicted": "INDETERMINATE",
+   "predicted_blocking_node": "time_of_need",
+   "confidence": 0.7547
+  }
+ },
+ {
+  "structured": {
+   "case_id": "lumbar_fusion_01",
+   "policy_id": "lumbar_fusion",
+   "title": "68F, L4-5 spondylolisthesis, fusion requested",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.3143
+  }
+ },
+ {
+  "structured": {
+   "case_id": "lumbar_fusion_02",
+   "policy_id": "lumbar_fusion",
+   "title": "54M, spondylolisthesis, 3 months of therapy",
+   "gold": "DENY",
+   "gold_blocking_node": "conservative_months",
+   "predicted": "DENY",
+   "predicted_blocking_node": "conservative_months",
+   "confidence": 0.8286
+  }
+ },
+ {
+  "structured": {
+   "case_id": "lumbar_fusion_03",
+   "policy_id": "lumbar_fusion",
+   "title": "61M, three independent failures",
+   "gold": "DENY",
+   "gold_blocking_node": "active_infection",
+   "predicted": "DENY",
+   "predicted_blocking_node": "conservative_months",
+   "confidence": 1.0
+  }
+ },
+ {
+  "structured": {
+   "case_id": "pet_01",
+   "policy_id": "pet_oncology",
+   "title": "64F, biopsy-proven lung cancer, initial staging",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.0925
+  }
+ },
+ {
+  "structured": {
+   "case_id": "pet_02",
+   "policy_id": "pet_oncology",
+   "title": "70M, prostate adenocarcinoma, initial strategy",
+   "gold": "DENY",
+   "gold_blocking_node": "prostate",
+   "predicted": "DENY",
+   "predicted_blocking_node": "prostate",
+   "confidence": 0.6038
+  }
+ },
+ {
+  "structured": {
+   "case_id": "power_wheelchair_01",
+   "policy_id": "power_wheelchair",
+   "title": "72M, post-stroke, power wheelchair",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.6
+  }
+ },
+ {
+  "structured": {
+   "case_id": "power_wheelchair_02",
+   "policy_id": "power_wheelchair",
+   "title": "68F, two independent failures: walker suffices, caregiver available",
+   "gold": "DENY",
+   "gold_blocking_node": "cane_walker_insufficient",
+   "predicted": "DENY",
+   "predicted_blocking_node": "cane_walker_insufficient",
+   "confidence": 0.6667
+  }
+ },
+ {
+  "structured": {
+   "case_id": "tavr_01",
+   "policy_id": "tavr",
+   "title": "81M, symptomatic severe AS, experienced programme",
+   "gold": "APPROVE",
+   "gold_blocking_node": null,
+   "predicted": "APPROVE",
+   "predicted_blocking_node": null,
+   "confidence": 0.6727
+  }
+ },
+ {
+  "structured": {
+   "case_id": "tavr_02",
+   "policy_id": "tavr",
+   "title": "79F, new programme, volume figures not supplied",
+   "gold": "INDETERMINATE",
+   "gold_blocking_node": "open_heart_volume",
+   "predicted": "INDETERMINATE",
+   "predicted_blocking_node": "existing_program",
+   "confidence": 0.6091
+  }
+ },
+ {
+  "structured": {
+   "case_id": "tavr_03",
+   "policy_id": "tavr",
+   "title": "83M, two independent failures: no surgeon assessment, PCI volume short",
+   "gold": "DENY",
+   "gold_blocking_node": "surgeon_exam",
+   "predicted": "DENY",
+   "predicted_blocking_node": "surgeon_exam",
+   "confidence": 1.0
+  }
+ }
+]

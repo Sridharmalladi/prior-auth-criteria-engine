@@ -1,0 +1,238 @@
+{
+ "policy_id": "cochlear_implant",
+ "title": "Cochlear Implantation (NCD 50.3)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3",
+ "source_type": "NCD",
+ "provenance": "hand-written from the fetched NCD text; every node cites its section",
+ "verification": "checked against source text",
+ "root": "root",
+ "nodes": {
+  "diagnosis": {
+   "id": "diagnosis",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Bilateral moderate-to-profound sensorineural hearing impairment",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "bilateral_sensorineural_hearing_loss",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "sentence_score": {
+   "id": "sentence_score",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Open-set sentence recognition at or below 60% in the best-aided condition",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "best_aided_sentence_recognition_percent",
+    "op": "<=",
+    "value": 60,
+    "unit": "%"
+   }
+  },
+  "limited_benefit": {
+   "id": "limited_benefit",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "diagnosis",
+    "sentence_score"
+   ],
+   "label": "Hearing loss with limited benefit from amplification",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": null
+  },
+  "cognitive": {
+   "id": "cognitive",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Cognitive ability to use auditory clues and willingness to undergo rehabilitation",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "cognitive_ability_and_willingness",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "middle_ear_infection": {
+   "id": "middle_ear_infection",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Middle ear infection present",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "middle_ear_infection",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "free_of_infection": {
+   "id": "free_of_infection",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "middle_ear_infection"
+   ],
+   "label": "Free from middle ear infection",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": null
+  },
+  "cochlear_lumen": {
+   "id": "cochlear_lumen",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Accessible cochlear lumen structurally suited to implantation",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "cochlear_lumen_accessible",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "nerve_lesion": {
+   "id": "nerve_lesion",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Lesion in the auditory nerve or central auditory pathways",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "auditory_nerve_lesion",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "free_of_lesion": {
+   "id": "free_of_lesion",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "nerve_lesion"
+   ],
+   "label": "Free from auditory nerve and CNS lesions",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": null
+  },
+  "anatomy": {
+   "id": "anatomy",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "free_of_infection",
+    "cochlear_lumen",
+    "free_of_lesion"
+   ],
+   "label": "Anatomy suitable for implantation",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": null
+  },
+  "surgical_contraindication": {
+   "id": "surgical_contraindication",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Contraindication to surgery",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "surgical_contraindication",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "no_contraindication": {
+   "id": "no_contraindication",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "surgical_contraindication"
+   ],
+   "label": "No contraindications to surgery",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": null
+  },
+  "fda_labeling": {
+   "id": "fda_labeling",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Device used per FDA-approved labeling",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": {
+    "key": "fda_labeling_compliant",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "limited_benefit",
+    "cognitive",
+    "anatomy",
+    "no_contraindication",
+    "fda_labeling"
+   ],
+   "label": "Cochlear implantation is covered",
+   "source_ref": {
+    "section": "B. Nationally Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=245&ncdver=3"
+   },
+   "predicate": null
+  }
+ }
+}

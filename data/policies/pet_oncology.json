@@ -1,0 +1,384 @@
+{
+ "policy_id": "pet_oncology",
+ "title": "FDG PET for Oncologic Conditions (NCD 220.6.17)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4",
+ "source_type": "NCD",
+ "provenance": "hand-written from the fetched NCD text; every node cites its section",
+ "verification": "checked against source text",
+ "root": "root",
+ "nodes": {
+  "biopsy_proven": {
+   "id": "biopsy_proven",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Cancer is biopsy proven",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "biopsy_proven_cancer",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "strongly_suspected": {
+   "id": "strongly_suspected",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Cancer strongly suspected on other diagnostic testing",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "strongly_suspected_cancer",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "cancer_status": {
+   "id": "cancer_status",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "biopsy_proven",
+    "strongly_suspected"
+   ],
+   "label": "Biopsy-proven or strongly suspected cancer",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "candidacy": {
+   "id": "candidacy",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Needed to determine candidacy for an invasive procedure",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "determines_procedure_candidacy",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "anatomic_location": {
+   "id": "anatomic_location",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Needed to determine the optimal anatomic location for an invasive procedure",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "determines_anatomic_location",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "tumor_extent": {
+   "id": "tumor_extent",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Needed to determine the anatomic extent of tumour",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "determines_tumor_extent",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "clinical_purpose": {
+   "id": "clinical_purpose",
+   "type": "N_OF",
+   "n": 1,
+   "children": [
+    "candidacy",
+    "anatomic_location",
+    "tumor_extent"
+   ],
+   "label": "At least one qualifying clinical purpose",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "is_initial": {
+   "id": "is_initial",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Study is for the initial anti-tumour treatment strategy",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "treatment_strategy",
+    "op": "==",
+    "value": "initial",
+    "unit": null
+   }
+  },
+  "prostate": {
+   "id": "prostate",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Adenocarcinoma of the prostate",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "tumor_type",
+    "op": "==",
+    "value": "prostate_adenocarcinoma",
+    "unit": null
+   }
+  },
+  "breast_type": {
+   "id": "breast_type",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Breast cancer",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "tumor_type",
+    "op": "==",
+    "value": "breast",
+    "unit": null
+   }
+  },
+  "breast_nodes": {
+   "id": "breast_nodes",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Study is initial staging of axillary nodes",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "study_purpose",
+    "op": "==",
+    "value": "axillary_node_staging",
+    "unit": null
+   }
+  },
+  "breast_excluded": {
+   "id": "breast_excluded",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "breast_type",
+    "breast_nodes"
+   ],
+   "label": "Breast cancer, axillary node staging",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "melanoma_type": {
+   "id": "melanoma_type",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Melanoma",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "tumor_type",
+    "op": "==",
+    "value": "melanoma",
+    "unit": null
+   }
+  },
+  "regional_nodes": {
+   "id": "regional_nodes",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Study is evaluation of regional lymph nodes",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "study_purpose",
+    "op": "==",
+    "value": "regional_node_evaluation",
+    "unit": null
+   }
+  },
+  "melanoma_excluded": {
+   "id": "melanoma_excluded",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "melanoma_type",
+    "regional_nodes"
+   ],
+   "label": "Melanoma, regional lymph node evaluation",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "excluded_initial": {
+   "id": "excluded_initial",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "prostate",
+    "breast_excluded",
+    "melanoma_excluded"
+   ],
+   "label": "A nationally non-covered initial indication",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "not_excluded_initial": {
+   "id": "not_excluded_initial",
+   "type": "NOT",
+   "n": null,
+   "children": [
+    "excluded_initial"
+   ],
+   "label": "Not a nationally non-covered initial indication",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "initial_arm": {
+   "id": "initial_arm",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "is_initial",
+    "not_excluded_initial"
+   ],
+   "label": "Covered as an initial treatment strategy study",
+   "source_ref": {
+    "section": "B.1/C.1 Initial anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "is_subsequent": {
+   "id": "is_subsequent",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Study is for a subsequent anti-tumour treatment strategy",
+   "source_ref": {
+    "section": "B.2 Subsequent anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "treatment_strategy",
+    "op": "==",
+    "value": "subsequent",
+    "unit": null
+   }
+  },
+  "prior_scans": {
+   "id": "prior_scans",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At most 2 prior subsequent-strategy FDG PET scans",
+   "source_ref": {
+    "section": "B.2 Subsequent anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": {
+    "key": "prior_subsequent_pet_scans",
+    "op": "<=",
+    "value": 2,
+    "unit": "scans"
+   }
+  },
+  "subsequent_arm": {
+   "id": "subsequent_arm",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "is_subsequent",
+    "prior_scans"
+   ],
+   "label": "Covered as a subsequent treatment strategy study",
+   "source_ref": {
+    "section": "B.2 Subsequent anti-tumor treatment strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "coverage_arm": {
+   "id": "coverage_arm",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "initial_arm",
+    "subsequent_arm"
+   ],
+   "label": "Covered under the initial or subsequent strategy",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "cancer_status",
+    "clinical_purpose",
+    "coverage_arm"
+   ],
+   "label": "FDG PET is covered",
+   "source_ref": {
+    "section": "2. Initial Anti-Tumor Treatment Strategy",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=331&ncdver=4"
+   },
+   "predicate": null
+  }
+ }
+}

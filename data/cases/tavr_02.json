@@ -1,0 +1,122 @@
+{
+ "case_id": "tavr_02",
+ "policy_id": "tavr",
+ "title": "79F, new programme, volume figures not supplied",
+ "synthetic": true,
+ "note_text": "STRUCTURAL HEART CLINIC NOTE \u2014 SYNTHETIC TEACHING CASE\n\n79-year-old woman with severe symptomatic aortic stenosis referred for TAVR.\n\nHPI: NYHA class III dyspnoea and exertional angina. Aortic valve area 0.8 cm2, mean gradient\n44 mm Hg. Symptomatic severe aortic stenosis.\n\nHEART TEAM: Examined face-to-face by both the cardiac surgeon and the interventional\ncardiologist, each independently. Rationale documented and circulated to the heart team.\nBoth will scrub jointly for the procedure.\n\nDEVICE: Self-expanding valve system with FDA premarket approval.\n\nSITE: This would be the first TAVR performed at this hospital; the programme is new and has\nno prior TAVR experience. On-site heart valve surgery and interventional cardiology\nprogrammes are in place and the intensive care unit is staffed by personnel experienced in\nopen-heart valve recovery. The institutional case volumes required for a new programme were\nrequested from the hospital's quality office and had not been supplied at the time of this\nnote.\n\nPLAN: Proceed once the site qualification file is complete.",
+ "facts": [
+  {
+   "key": "symptomatic_aortic_stenosis",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    237,
+    272
+   ],
+   "evidence_text": "Symptomatic severe aortic stenosis."
+  },
+  {
+   "key": "fda_approved_system",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    500,
+    555
+   ],
+   "evidence_text": "Self-expanding valve system with FDA premarket approval"
+  },
+  {
+   "key": "cardiac_surgeon_examined",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    286,
+    335
+   ],
+   "evidence_text": "Examined face-to-face by both the cardiac surgeon"
+  },
+  {
+   "key": "interventional_cardiologist_examined",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    340,
+    391
+   ],
+   "evidence_text": "the interventional\ncardiologist, each independently"
+  },
+  {
+   "key": "heart_team_rationale_documented",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    393,
+    446
+   ],
+   "evidence_text": "Rationale documented and circulated to the heart team"
+  },
+  {
+   "key": "joint_intraoperative_participation",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    448,
+    489
+   ],
+   "evidence_text": "Both will scrub jointly for the procedure"
+  },
+  {
+   "key": "onsite_valve_surgery_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    676,
+    703
+   ],
+   "evidence_text": "On-site heart valve surgery"
+  },
+  {
+   "key": "onsite_interventional_cardiology_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    708,
+    757
+   ],
+   "evidence_text": "interventional cardiology\nprogrammes are in place"
+  },
+  {
+   "key": "post_procedure_icu",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    766,
+    821
+   ],
+   "evidence_text": "intensive care unit is staffed by personnel experienced"
+  },
+  {
+   "key": "established_tavr_program",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    621,
+    674
+   ],
+   "evidence_text": "the programme is new and has\nno prior TAVR experience"
+  }
+ ],
+ "gold_decision": "INDETERMINATE",
+ "gold_blocking_node": "open_heart_volume",
+ "note_on_gold": "The hospital cannot qualify on the experienced-programme route and the new-programme volumes are absent from the record, so the site question is unresolved rather than failed."
+}

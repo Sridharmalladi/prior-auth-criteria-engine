@@ -1,0 +1,314 @@
+{
+ "policy_id": "power_wheelchair",
+ "title": "Mobility Assistive Equipment \u2014 power wheelchair (NCD 280.3)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2",
+ "source_type": "NCD",
+ "provenance": "hand-written from the fetched NCD text; every node cites its section",
+ "verification": "checked against source text",
+ "root": "root",
+ "nodes": {
+  "prevents_mradl": {
+   "id": "prevents_mradl",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Mobility limitation prevents accomplishing MRADLs entirely",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "prevents_mradls",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "heightened_risk": {
+   "id": "heightened_risk",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Attempting MRADLs places the beneficiary at heightened risk",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "heightened_risk_attempting_mradls",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "not_timely": {
+   "id": "not_timely",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Cannot complete MRADLs within a reasonable time frame",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "cannot_complete_mradls_timely",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "mobility_limitation": {
+   "id": "mobility_limitation",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "prevents_mradl",
+    "heightened_risk",
+    "not_timely"
+   ],
+   "label": "Question 1: a qualifying mobility limitation",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": null
+  },
+  "no_other_limits": {
+   "id": "no_other_limits",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "No other condition limits participation in MRADLs",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "other_limiting_conditions",
+    "op": "==",
+    "value": false,
+    "unit": null
+   }
+  },
+  "limits_compensated": {
+   "id": "limits_compensated",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Other limiting conditions can be ameliorated or compensated",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "other_limitations_compensated",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "other_conditions": {
+   "id": "other_conditions",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "no_other_limits",
+    "limits_compensated"
+   ],
+   "label": "Questions 2-3: other limitations absent or compensable",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": null
+  },
+  "safe_operation": {
+   "id": "safe_operation",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Beneficiary or caregiver can operate the equipment safely",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "safe_operation_demonstrated",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "cane_walker_insufficient": {
+   "id": "cane_walker_insufficient",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "A cane or walker does not resolve the mobility deficit",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "cane_or_walker_sufficient",
+    "op": "==",
+    "value": false,
+    "unit": null
+   }
+  },
+  "home_supports": {
+   "id": "home_supports",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Home environment supports use of a wheelchair",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "home_environment_supports_wheelchair",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "upper_extremity": {
+   "id": "upper_extremity",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Insufficient upper extremity function to self-propel a manual wheelchair",
+   "source_ref": {
+    "section": "B. Question 7: manual wheelchair",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "can_self_propel_manual_wheelchair",
+    "op": "==",
+    "value": false,
+    "unit": null
+   }
+  },
+  "no_caregiver": {
+   "id": "no_caregiver",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "No caregiver available, willing and able to propel a manual wheelchair",
+   "source_ref": {
+    "section": "B. Question 7: manual wheelchair",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "caregiver_available_for_manual_wheelchair",
+    "op": "==",
+    "value": false,
+    "unit": null
+   }
+  },
+  "manual_insufficient": {
+   "id": "manual_insufficient",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "upper_extremity",
+    "no_caregiver"
+   ],
+   "label": "A manual wheelchair is not sufficient",
+   "source_ref": {
+    "section": "B. Question 7: manual wheelchair",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": null
+  },
+  "postural_stability": {
+   "id": "postural_stability",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Insufficient strength or postural stability to operate a POV",
+   "source_ref": {
+    "section": "B. Question 8: POV/scooter",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "can_operate_pov",
+    "op": "==",
+    "value": false,
+    "unit": null
+   }
+  },
+  "home_pov": {
+   "id": "home_pov",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Home cannot accommodate a POV",
+   "source_ref": {
+    "section": "B. Question 8: POV/scooter",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "home_accommodates_pov",
+    "op": "==",
+    "value": false,
+    "unit": null
+   }
+  },
+  "pov_insufficient": {
+   "id": "pov_insufficient",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "postural_stability",
+    "home_pov"
+   ],
+   "label": "A POV/scooter is not sufficient",
+   "source_ref": {
+    "section": "B. Question 8: POV/scooter",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": null
+  },
+  "power_features": {
+   "id": "power_features",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Power wheelchair features are needed to participate in MRADLs",
+   "source_ref": {
+    "section": "B. Question 9: power wheelchair",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": {
+    "key": "power_features_needed",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "mobility_limitation",
+    "other_conditions",
+    "safe_operation",
+    "cane_walker_insufficient",
+    "home_supports",
+    "manual_insufficient",
+    "pov_insufficient",
+    "power_features"
+   ],
+   "label": "A power wheelchair is covered",
+   "source_ref": {
+    "section": "B. Clinical Criteria for MAE Coverage",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=219&ncdver=2"
+   },
+   "predicate": null
+  }
+ }
+}

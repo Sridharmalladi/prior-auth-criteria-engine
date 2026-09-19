@@ -1,0 +1,350 @@
+{
+ "policy_id": "tavr",
+ "title": "Transcatheter Aortic Valve Replacement (NCD 20.32)",
+ "source_url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2",
+ "source_type": "NCD",
+ "provenance": "hand-written from the fetched NCD text; every node cites its section",
+ "verification": "checked against source text",
+ "root": "root",
+ "nodes": {
+  "symptomatic_as": {
+   "id": "symptomatic_as",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Symptomatic aortic valve stenosis",
+   "source_ref": {
+    "section": "A. Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "symptomatic_aortic_stenosis",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "fda_system": {
+   "id": "fda_system",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Complete valve and implantation system with FDA premarket approval",
+   "source_ref": {
+    "section": "A. Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "fda_approved_system",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "surgeon_exam": {
+   "id": "surgeon_exam",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Cardiac surgeon examined the patient face-to-face",
+   "source_ref": {
+    "section": "A.2 Heart team",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "cardiac_surgeon_examined",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "cardiologist_exam": {
+   "id": "cardiologist_exam",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Interventional cardiologist examined the patient face-to-face",
+   "source_ref": {
+    "section": "A.2 Heart team",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "interventional_cardiologist_examined",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "rationale": {
+   "id": "rationale",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Clinical rationale documented and shared with the heart team",
+   "source_ref": {
+    "section": "A.2 Heart team",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "heart_team_rationale_documented",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "joint_participation": {
+   "id": "joint_participation",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Surgeon and cardiologist jointly participate intra-operatively",
+   "source_ref": {
+    "section": "A.2 Heart team",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "joint_intraoperative_participation",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "heart_team": {
+   "id": "heart_team",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "surgeon_exam",
+    "cardiologist_exam",
+    "rationale",
+    "joint_participation"
+   ],
+   "label": "Patient under the care of a qualifying heart team",
+   "source_ref": {
+    "section": "A.2 Heart team",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": null
+  },
+  "valve_surgery_program": {
+   "id": "valve_surgery_program",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "On-site heart valve surgery program",
+   "source_ref": {
+    "section": "A.3 Hospital infrastructure",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "onsite_valve_surgery_program",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "cardiology_program": {
+   "id": "cardiology_program",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "On-site interventional cardiology program",
+   "source_ref": {
+    "section": "A.3 Hospital infrastructure",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "onsite_interventional_cardiology_program",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "icu": {
+   "id": "icu",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Post-procedure ICU with experienced personnel",
+   "source_ref": {
+    "section": "A.3 Hospital infrastructure",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "post_procedure_icu",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "existing_program": {
+   "id": "existing_program",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "Hospital has an established TAVR program meeting the experienced-program volumes",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "established_tavr_program",
+    "op": "==",
+    "value": true,
+    "unit": null
+   }
+  },
+  "open_heart_volume": {
+   "id": "open_heart_volume",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At least 50 open heart surgeries in the previous year",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "open_heart_surgeries_prior_year",
+    "op": ">=",
+    "value": 50,
+    "unit": "cases"
+   }
+  },
+  "aortic_valve_volume": {
+   "id": "aortic_valve_volume",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At least 20 aortic valve procedures in the previous 2 years",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "aortic_valve_procedures_prior_2_years",
+    "op": ">=",
+    "value": 20,
+    "unit": "cases"
+   }
+  },
+  "surgeons": {
+   "id": "surgeons",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At least 2 physicians with cardiac surgery privileges",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "cardiac_surgeons_on_staff",
+    "op": ">=",
+    "value": 2,
+    "unit": "physicians"
+   }
+  },
+  "interventionalists": {
+   "id": "interventionalists",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At least 1 physician with interventional cardiology privileges",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "interventional_cardiologists_on_staff",
+    "op": ">=",
+    "value": 1,
+    "unit": "physicians"
+   }
+  },
+  "pci_volume": {
+   "id": "pci_volume",
+   "type": "LEAF",
+   "n": null,
+   "children": [],
+   "label": "At least 300 PCIs per year",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": {
+    "key": "pci_per_year",
+    "op": ">=",
+    "value": 300,
+    "unit": "cases"
+   }
+  },
+  "new_program_volumes": {
+   "id": "new_program_volumes",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "open_heart_volume",
+    "aortic_valve_volume",
+    "surgeons",
+    "interventionalists",
+    "pci_volume"
+   ],
+   "label": "Volumes qualifying a hospital without prior TAVR experience",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": null
+  },
+  "volume_requirements": {
+   "id": "volume_requirements",
+   "type": "OR",
+   "n": null,
+   "children": [
+    "existing_program",
+    "new_program_volumes"
+   ],
+   "label": "Hospital meets one of the two volume qualification sets",
+   "source_ref": {
+    "section": "A.3 Volume requirements",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": null
+  },
+  "infrastructure": {
+   "id": "infrastructure",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "valve_surgery_program",
+    "cardiology_program",
+    "icu",
+    "volume_requirements"
+   ],
+   "label": "Hospital infrastructure requirements",
+   "source_ref": {
+    "section": "A.3 Hospital infrastructure",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": null
+  },
+  "root": {
+   "id": "root",
+   "type": "AND",
+   "n": null,
+   "children": [
+    "symptomatic_as",
+    "fda_system",
+    "heart_team",
+    "infrastructure"
+   ],
+   "label": "TAVR is covered",
+   "source_ref": {
+    "section": "A. Covered Indications",
+    "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=355&ncdver=2"
+   },
+   "predicate": null
+  }
+ }
+}

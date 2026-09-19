@@ -1,0 +1,122 @@
+{
+ "case_id": "tavr_01",
+ "policy_id": "tavr",
+ "title": "81M, symptomatic severe AS, experienced programme",
+ "synthetic": true,
+ "note_text": "STRUCTURAL HEART CLINIC NOTE \u2014 SYNTHETIC TEACHING CASE\n\n81-year-old man with severe symptomatic aortic stenosis.\n\nHPI: Exertional syncope twice in the past three months, NYHA class III dyspnoea. Echo shows\naortic valve area 0.7 cm2, mean gradient 48 mm Hg. Symptomatic severe aortic stenosis\nconfirmed.\n\nHEART TEAM: Independently examined face-to-face by the cardiac surgeon and by the\ninterventional cardiologist. Both have documented their rationale for recommending\ntranscatheter over surgical replacement and shared it with the heart team. Both will\nparticipate jointly in the intra-operative technical aspects of the procedure.\n\nDEVICE: Balloon-expandable valve and delivery system with FDA premarket approval for this\nindication.\n\nSITE: The hospital runs an established TAVR programme meeting the experienced-programme\nvolume qualifications, with on-site heart valve surgery and interventional cardiology\nprogrammes and a cardiothoracic intensive care unit staffed by personnel experienced in\nopen-heart valve recovery.\n\nPLAN: Proceed to transfemoral TAVR.",
+ "facts": [
+  {
+   "key": "symptomatic_aortic_stenosis",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    257,
+    301
+   ],
+   "evidence_text": "Symptomatic severe aortic stenosis\nconfirmed"
+  },
+  {
+   "key": "fda_approved_system",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    671,
+    734
+   ],
+   "evidence_text": "delivery system with FDA premarket approval for this\nindication"
+  },
+  {
+   "key": "cardiac_surgeon_examined",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    316,
+    374
+   ],
+   "evidence_text": "Independently examined face-to-face by the cardiac surgeon"
+  },
+  {
+   "key": "interventional_cardiologist_examined",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    375,
+    413
+   ],
+   "evidence_text": "and by the\ninterventional cardiologist"
+  },
+  {
+   "key": "heart_team_rationale_documented",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    425,
+    508
+   ],
+   "evidence_text": "documented their rationale for recommending\ntranscatheter over surgical replacement"
+  },
+  {
+   "key": "joint_intraoperative_participation",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    554,
+    614
+   ],
+   "evidence_text": "participate jointly in the intra-operative technical aspects"
+  },
+  {
+   "key": "onsite_valve_surgery_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    853,
+    880
+   ],
+   "evidence_text": "on-site heart valve surgery"
+  },
+  {
+   "key": "onsite_interventional_cardiology_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    885,
+    921
+   ],
+   "evidence_text": "interventional cardiology\nprogrammes"
+  },
+  {
+   "key": "post_procedure_icu",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    928,
+    995
+   ],
+   "evidence_text": "cardiothoracic intensive care unit staffed by personnel experienced"
+  },
+  {
+   "key": "established_tavr_program",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    764,
+    846
+   ],
+   "evidence_text": "established TAVR programme meeting the experienced-programme\nvolume qualifications"
+  }
+ ],
+ "gold_decision": "APPROVE",
+ "gold_blocking_node": null,
+ "note_on_gold": ""
+}

@@ -1,0 +1,91 @@
+{
+ "case_id": "lumbar_fusion_02",
+ "policy_id": "lumbar_fusion",
+ "title": "54M, spondylolisthesis, 3 months of therapy",
+ "synthetic": true,
+ "note_text": "SPINE SURGERY CONSULTATION \u2014 SYNTHETIC TEACHING CASE\n\n54-year-old man, warehouse supervisor, with low back pain radiating into the right leg.\n\nHPI: Pain for the past 8 months, worse with extension and prolonged standing. Right L5\nradicular pattern with intermittent paraesthesia over the dorsum of the foot. Strength is\n5/5 throughout. No red flag symptoms.\n\nCONSERVATIVE CARE: Referred to physical therapy 3 months ago and has attended consistently;\nhe reports partial improvement in the first six weeks with a plateau since. Taking\nmeloxicam daily. No injections attempted yet; he is willing to proceed with them.\n\nIMAGING: Flexion-extension radiographs show grade I isthmic spondylolisthesis at L5-S1 with\n3 mm of translation on flexion. MRI shows foraminal narrowing on the right at L5-S1\nconsistent with his symptoms.\n\nPMH: Type 2 diabetes, well controlled. No infection, no malignancy, afebrile.\n\nASSESSMENT: Symptomatic isthmic spondylolisthesis. Surgical candidate, but conservative\nmanagement is incomplete. Discussed continuing therapy and proceeding to injection.",
+ "facts": [
+  {
+   "key": "diagnosis",
+   "value": [
+    "spondylolisthesis"
+   ],
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    661,
+    703
+   ],
+   "evidence_text": "grade I isthmic spondylolisthesis at L5-S1"
+  },
+  {
+   "key": "neurogenic_claudication_or_radiculopathy",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    221,
+    278
+   ],
+   "evidence_text": "Right L5\nradicular pattern with intermittent paraesthesia"
+  },
+  {
+   "key": "conservative_therapy_months",
+   "value": 3,
+   "unit": "months",
+   "confidence": 0.95,
+   "source_span": [
+    378,
+    419
+   ],
+   "evidence_text": "Referred to physical therapy 3 months ago"
+  },
+  {
+   "key": "conservative_therapy_contraindicated",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    580,
+    614
+   ],
+   "evidence_text": "he is willing to proceed with them"
+  },
+  {
+   "key": "symptom_duration_months",
+   "value": 8,
+   "unit": "months",
+   "confidence": 0.95,
+   "source_span": [
+    148,
+    174
+   ],
+   "evidence_text": "Pain for the past 8 months"
+  },
+  {
+   "key": "active_spinal_infection",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    863,
+    901
+   ],
+   "evidence_text": "No infection, no malignancy, afebrile."
+  },
+  {
+   "key": "active_malignancy_at_level",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    877,
+    901
+   ],
+   "evidence_text": "no malignancy, afebrile."
+  }
+ ],
+ "gold_decision": "DENY",
+ "gold_blocking_node": "conservative_months",
+ "note_on_gold": "Three months documented against a six-month requirement; everything else is satisfied."
+}

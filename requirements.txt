@@ -1,0 +1,11 @@
+openai
+pydantic
+langgraph
+networkx
+pymupdf
+selectolax
+sentence-transformers
+scikit-learn
+numpy
+python-dotenv
+pytest

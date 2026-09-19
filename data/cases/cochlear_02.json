@@ -1,0 +1,100 @@
+{
+ "case_id": "cochlear_02",
+ "policy_id": "cochlear_implant",
+ "title": "71M, 74% sentence recognition with aids",
+ "synthetic": true,
+ "note_text": "OTOLOGY CONSULTATION \u2014 SYNTHETIC TEACHING CASE\n\n71-year-old man requesting cochlear implantation.\n\nAUDIOLOGY: Bilateral moderate sensorineural hearing impairment. Best-aided open-set\nsentence recognition 74% in the best-aided listening condition on recorded testing,\nfollowing optimisation of his current hearing aids.\n\nCOGNITION AND MOTIVATION: Cognitively intact and willing to commit to rehabilitation.\n\nEXAMINATION AND IMAGING: No middle ear infection. Patent cochleae with accessible lumen on\nCT. No auditory nerve or central lesion on MRI.\n\nANAESTHETIC REVIEW: No contraindication to surgery.\n\nDEVICE: The device under consideration would be used in accordance with its FDA-approved\nlabelling.\n\nASSESSMENT: Hearing loss is real and disabling, but aided sentence recognition remains\nabove the threshold at which limited benefit from amplification is established. Continue\nwith optimised amplification and repeat testing in 12 months.",
+ "facts": [
+  {
+   "key": "bilateral_sensorineural_hearing_loss",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    110,
+    161
+   ],
+   "evidence_text": "Bilateral moderate sensorineural hearing impairment"
+  },
+  {
+   "key": "best_aided_sentence_recognition_percent",
+   "value": 74,
+   "unit": "%",
+   "confidence": 0.95,
+   "source_span": [
+    183,
+    245
+   ],
+   "evidence_text": "sentence recognition 74% in the best-aided listening condition"
+  },
+  {
+   "key": "cognitive_ability_and_willingness",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    346,
+    404
+   ],
+   "evidence_text": "Cognitively intact and willing to commit to rehabilitation"
+  },
+  {
+   "key": "middle_ear_infection",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    432,
+    456
+   ],
+   "evidence_text": "No middle ear infection."
+  },
+  {
+   "key": "cochlear_lumen_accessible",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    457,
+    500
+   ],
+   "evidence_text": "Patent cochleae with accessible lumen on\nCT"
+  },
+  {
+   "key": "auditory_nerve_lesion",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    502,
+    544
+   ],
+   "evidence_text": "No auditory nerve or central lesion on MRI"
+  },
+  {
+   "key": "surgical_contraindication",
+   "value": false,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    567,
+    598
+   ],
+   "evidence_text": "No contraindication to surgery."
+  },
+  {
+   "key": "fda_labeling_compliant",
+   "value": true,
+   "unit": null,
+   "confidence": 0.95,
+   "source_span": [
+    648,
+    698
+   ],
+   "evidence_text": "used in accordance with its FDA-approved\nlabelling"
+  }
+ ],
+ "gold_decision": "DENY",
+ "gold_blocking_node": "sentence_score",
+ "note_on_gold": "74% aided sentence recognition against a 60% ceiling."
+}
