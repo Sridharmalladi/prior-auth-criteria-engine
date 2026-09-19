@@ -8,7 +8,7 @@ import { evaluate, formatValue } from './evaluator.js';
 import { renderTree, pathToNode } from './render-tree.js';
 import { initLiveMode } from './live.js';
 
-const REPO_URL = 'https://github.com/your-account/prior-auth-criteria-engine';
+const REPO_URL = 'https://github.com/Sridharmalladi/prior-auth-criteria-engine';
 
 const dom = {
   status: document.getElementById('status'),

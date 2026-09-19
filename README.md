@@ -1,14 +1,12 @@
 # Prior-Auth Criteria Engine
 
-[![parity](https://github.com/your-account/prior-auth-criteria-engine/actions/workflows/parity.yml/badge.svg)](https://github.com/your-account/prior-auth-criteria-engine/actions/workflows/parity.yml)
+[![parity](https://github.com/Sridharmalladi/prior-auth-criteria-engine/actions/workflows/parity.yml/badge.svg)](https://github.com/Sridharmalladi/prior-auth-criteria-engine/actions/workflows/parity.yml)
 
 Checks whether a documented clinical case satisfies published Medicare coverage
 criteria, and shows exactly which clause blocks it.
 
-**Live demo:** `https://your-account.github.io/prior-auth-criteria-engine/`
-*(placeholder — replace `your-account` with the GitHub username or org this
-repo is pushed under once Pages is enabled; see [Reproduce](#reproduce)).*
-**Evaluation:** `https://your-account.github.io/prior-auth-criteria-engine/eval.html`
+**Live demo:** https://sridharmalladi.github.io/prior-auth-criteria-engine/
+**Evaluation:** https://sridharmalladi.github.io/prior-auth-criteria-engine/eval.html
 
 ---
 
