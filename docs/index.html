@@ -40,9 +40,8 @@
 
 <main class="panes" id="panes" hidden>
   <section class="pane" aria-labelledby="tree-heading">
-    <h2 id="tree-heading">Criteria tree
-      <button type="button" class="info-btn" title="Built directly from the policy's published source (a CMS NCD or LCD). Each box is one criterion from that document. Its color shows whether the case's documented facts satisfy it: green for satisfied, red for failed, amber for not documented.">?</button>
-    </h2>
+    <h2 id="tree-heading">Criteria tree</h2>
+    <p class="pane-hint">The policy's own published rules, laid out as a tree. Colour shows whether this case meets each one: green met, red failed, amber not documented.</p>
     <div class="tree-scroll"><svg id="tree" role="img" aria-label="Criteria tree with each node coloured by its evaluated state"></svg></div>
     <div class="node-detail" id="node-detail">
       <span class="muted">Select a node to see the clause it came from.</span>
@@ -50,9 +49,8 @@
   </section>
 
   <section class="pane" aria-labelledby="note-heading">
-    <h2 id="note-heading">Note &amp; facts
-      <button type="button" class="info-btn" title="The clinical note is on the left. Every fact on the right was extracted from it, and stays linked to the exact sentence it came from, so nothing is asserted that the note does not say.">?</button>
-    </h2>
+    <h2 id="note-heading">Note &amp; facts</h2>
+    <p class="pane-hint">The clinical note on the left, and the facts pulled from it on the right. Each fact is tied to the exact sentence it came from.</p>
     <div class="body">
       <div class="note" id="note"></div>
       <div class="chips" id="chips"></div>
@@ -60,9 +58,8 @@
   </section>
 
   <section class="pane" aria-labelledby="verdict-heading">
-    <h2 id="verdict-heading">Verdict
-      <button type="button" class="info-btn" title="The criteria tree's overall result for this case: approved, denied, or indeterminate. It names the single clause blocking approval and links to that clause's source in the policy. This is criteria satisfaction, not a prediction of what a payer would decide.">?</button>
-    </h2>
+    <h2 id="verdict-heading">Verdict</h2>
+    <p class="pane-hint">The tree's bottom line for this case: approve, deny, or indeterminate, plus the one rule blocking approval.</p>
     <div class="body">
       <div class="verdict" id="verdict"></div>
       <div class="blocking" id="blocking"></div>

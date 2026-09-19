@@ -147,27 +147,20 @@ button.primary { background: var(--accent); color: #fff; border-color: var(--acc
 
 .pane > h2 {
   margin: 0;
-  padding: 10px 14px;
+  padding: 10px 14px 0;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-dim);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
-.info-btn {
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  border-radius: 50%;
-  font-size: 10.5px;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  cursor: help;
+.pane-hint {
+  margin: 4px 0 0;
+  padding: 0 14px 10px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
 }
 
 .pane > .body { padding: 12px 14px; }
